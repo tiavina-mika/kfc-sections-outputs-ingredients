@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import DeleteIcon from "@mui/icons-material/Delete";
 import AddIcon from "@mui/icons-material/Add";
 import { Formik, FieldArray, Form, Field, type FormikProps } from "formik";
@@ -152,7 +153,7 @@ const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngre
                     </Button>
                   </Box>
                   <Stack spacing={2}>
-                    {values.sectionOutputs.map((section, index) => (
+                    {values.sectionOutputs.map((sectionOutput: Record<string, any>, index: number) => (
                       <StyledPart
                         display="flex"
                         alignItems="flex-start"
@@ -170,11 +171,11 @@ const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngre
                           {/* ingredients field */}
                           <Grid container spacing={1} sx={{ flex: 1 }}>
                             {/* no ingredient */}
-                            {section.ingredients.length === 0 ? (
+                            {sectionOutput.ingredients.length === 0 ? (
                               <StyledNoIngredients size={6} />
                             ) : (
                               // with ingredients
-                              section.ingredients.map((ingredient, ingredientIndex) => (
+                              sectionOutput.ingredients.map((ingredient: Record<string, any>, ingredientIndex: number) => (
                                 <Grid size={6} key={ingredientIndex}>
                                   <StyledIngredient>
                                     <DragIndicatorIcon />
