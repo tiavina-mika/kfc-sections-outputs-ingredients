@@ -94,7 +94,7 @@ const StyledIngredient = styled(Box)({
   backgroundColor: "#fff"
 });
 
-const StyledNoIngredients = styled("div")({
+const StyledNoIngredients = styled(Grid)({
   padding: "8px",
   gap: 8,
   borderRadius: 8,
@@ -158,7 +158,7 @@ const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngre
                         display="flex"
                         alignItems="flex-start"
                       >
-                        <Box flex={1}>
+                        <Stack flex={1} spacing={2}>
                           {/* name field */}
                           <Field
                             as={TextField}
@@ -169,27 +169,25 @@ const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngre
                             size="small"
                           />
                           {/* ingredients field */}
-                          <Box mt={1} display="flex" gap={1} flexWrap="wrap">
+                          <Grid container spacing={1} sx={{ flex: 1 }}>
                             {/* no ingredient */}
                             {section.ingredients.length === 0 ? (
-                              <StyledNoIngredients />
+                              <StyledNoIngredients size={6} />
                             ) : (
-                            // with ingredients
-                              <Grid container spacing={1} sx={{ flex: 1 }}>
-                                {section.ingredients.map((ingredient, ingIndex) => (
-                                  <Grid size={6} key={ingIndex}>
-                                    <StyledIngredient>
-                                      <DragIndicatorIcon />
-                                      <Typography variant="body2" sx={{ fontSize: 16, lineHeight: 1.5, fontWeight: 400 }}>
-                                        {ingredient.supplierItem.name}
-                                      </Typography>
-                                    </StyledIngredient>
-                                  </Grid>
-                                ))}
-                              </Grid>
+                              // with ingredients
+                              section.ingredients.map((ingredient, ingredientIndex) => (
+                                <Grid size={6} key={ingredientIndex}>
+                                  <StyledIngredient>
+                                    <DragIndicatorIcon />
+                                    <Typography variant="body2" sx={{ fontSize: 16, lineHeight: 1.5, fontWeight: 400 }}>
+                                      {ingredient.supplierItem.name}
+                                    </Typography>
+                                  </StyledIngredient>
+                                </Grid>
+                              ))
                             )}
-                          </Box>
-                        </Box>
+                          </Grid>
+                        </Stack>
                         {/* delete a part */}
                         {index > 1 && (
                           <IconButton
