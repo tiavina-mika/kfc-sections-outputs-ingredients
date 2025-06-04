@@ -110,14 +110,14 @@ export type SectionOutputsIngredientsFormValues = {
   }[];
 };
 
-const initialValues: SectionOutputsIngredientsFormValues = {
-  sectionOutputs:
-    stepComponents[0]?.sectionOutputs.map((so) => ({
-      name: so.name,
-      type: so.type,
-      ingredients: so.ingredients,
-    })) || [],
-};
+// const initialValues: SectionOutputsIngredientsFormValues = {
+//   sectionOutputs:
+//     stepComponents[0]?.sectionOutputs.map((so) => ({
+//       name: so.name,
+//       type: so.type,
+//       ingredients: so.ingredients,
+//     })) || [],
+// };
 
 type Props = {
   onSubmit: (values: SectionOutputsIngredientsFormValues) => void;
@@ -125,13 +125,12 @@ type Props = {
 };
 
 const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngredientsFormValues>, Props>(
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   ({ onSubmit, section }, ref) => {
 
   return (
     <Formik
-      initialValues={initialValues}
-      // initialValues={{ sectionOutputs: []}}
+      // initialValues={initialValues}
+      initialValues={{ sectionOutputs: section?.sectionOutputs || []}}
       onSubmit={onSubmit}
       enableReinitialize
       innerRef={ref}
