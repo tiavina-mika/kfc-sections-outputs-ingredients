@@ -141,9 +141,9 @@ const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngre
             <FieldArray name="sectionOutputs">
               {({ push, remove }) => (
                 <>
-                  <Box mb={2}>
+                  <Box sx={{ display: "flex", justifyContent: "flex-end", alignItems: "center", mb: 1 }}>
                     <Button
-                      variant="outlined"
+                      variant="text"
                       startIcon={<AddIcon />}
                       onClick={() =>
                         push({ name: "", ingredients: [] })
