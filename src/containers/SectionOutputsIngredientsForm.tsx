@@ -9,6 +9,7 @@ import {
   Box,
   Stack,
   styled,
+  Grid,
 } from "@mui/material";
 import { forwardRef } from "react";
 import DragIndicatorIcon from '@mui/icons-material/DragIndicator';
@@ -158,6 +159,7 @@ const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngre
                             variant="standard"
                             size="small"
                           />
+                          {/* ingredients field */}
                           <Box mt={1} display="flex" gap={1} flexWrap="wrap">
                             {section.ingredients.length === 0 ? (
                               <Typography
@@ -167,15 +169,18 @@ const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngre
                                 Aucun ingrédient
                               </Typography>
                             ) : (
-                              // ingredients card
-                              section.ingredients.map((ingredient, ingredientIndex) => (
-                                <StyledIngredient key={ingredientIndex}>
-                                  <DragIndicatorIcon />
-                                  <Typography variant="body2">
-                                    {ingredient.supplierItem.name}
-                                  </Typography>
-                                </StyledIngredient>
-                              ))
+                              <Grid container spacing={1} sx={{ flex: 1 }}>
+                                {section.ingredients.map((ingredient, ingIndex) => (
+                                  <Grid size={6} key={ingIndex}>
+                                    <StyledIngredient>
+                                      <DragIndicatorIcon />
+                                      <Typography variant="body2">
+                                        {ingredient.supplierItem.name}
+                                      </Typography>
+                                    </StyledIngredient>
+                                  </Grid>
+                                ))}
+                              </Grid>
                             )}
                           </Box>
                         </Box>
