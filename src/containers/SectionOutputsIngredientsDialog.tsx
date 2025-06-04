@@ -16,6 +16,7 @@ const sx = {
       flexDirection: "column",
       gap: "32px",
       padding: "32px",
+      width: 700
     }
   }
 }
@@ -45,8 +46,8 @@ const SectionOutputsIngredientsDialogForm = ({
   };
 
 return (
-  <Dialog open={open} onClose={onClose} maxWidth="md" fullWidth sx={sx.dialog}>
-    <DialogTitle sx={{ px: 0 }}>
+  <Dialog open={open} onClose={onClose} fullWidth sx={sx.dialog}>
+    <DialogTitle sx={{ p: 0, m: 0, fontSize: 16, fontWeight: 400, lineHeight: 1.375, color: "#7c7c7c" }}>
       Divisez votre section en répartissant les ingrédients dans chaque partie
       et attribuez-leur un nom.
     </DialogTitle>
