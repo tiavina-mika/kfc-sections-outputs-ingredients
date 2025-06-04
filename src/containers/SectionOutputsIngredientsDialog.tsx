@@ -14,11 +14,13 @@ type Props = {
   open: boolean;
   onClose: () => void;
   // onSubmit: (values: SectionOutputsIngredientsFormValues) => void;
+  section: Record<string, any> | null;
 };
 
 const SectionOutputsIngredientsDialogForm = ({
   open,
   onClose,
+  section,
   // onSubmit,
 }: Props) => {
     const formikRef = useRef<FormikProps<SectionOutputsIngredientsFormValues>>(null);
@@ -40,7 +42,7 @@ return (
       et attribuez-leur un nom.
     </DialogTitle>
     <DialogContent>
-      <SectionOutputsIngredientsForm ref={formikRef} onSubmit={handleValidate} />
+      <SectionOutputsIngredientsForm ref={formikRef} onSubmit={handleValidate} section={section} />
     </DialogContent>
     <DialogActions>
       <Button onClick={onClose} variant="outlined">
