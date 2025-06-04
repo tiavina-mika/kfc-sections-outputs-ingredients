@@ -93,10 +93,12 @@ const initialValues: SectionOutputsIngredientsFormValues = {
 
 type Props = {
   onSubmit: (values: SectionOutputsIngredientsFormValues) => void;
+  section: Record<string, any> | null;
 };
 
 const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngredientsFormValues>, Props>(
-  ({ onSubmit }, ref) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  ({ onSubmit, section }, ref) => {
 
   return (
     <Formik
