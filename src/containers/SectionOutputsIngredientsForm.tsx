@@ -94,6 +94,15 @@ const StyledIngredient = styled(Box)({
   backgroundColor: "#fff"
 });
 
+const StyledNoIngredients = styled("div")({
+  padding: "8px",
+  gap: 8,
+  borderRadius: 8,
+  height: 40,
+  border: "2px dashed #fff"
+
+});
+
 export type SectionOutputsIngredientsFormValues = {
   sectionOutputs: {
     name: string;
@@ -161,14 +170,11 @@ const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngre
                           />
                           {/* ingredients field */}
                           <Box mt={1} display="flex" gap={1} flexWrap="wrap">
+                            {/* no ingredient */}
                             {section.ingredients.length === 0 ? (
-                              <Typography
-                                variant="body2"
-                                color="text.secondary"
-                              >
-                                Aucun ingrédient
-                              </Typography>
+                              <StyledNoIngredients />
                             ) : (
+                            // with ingredients
                               <Grid container spacing={1} sx={{ flex: 1 }}>
                                 {section.ingredients.map((ingredient, ingIndex) => (
                                   <Grid size={6} key={ingIndex}>
