@@ -174,7 +174,7 @@ const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngre
                                   <Grid size={6} key={ingIndex}>
                                     <StyledIngredient>
                                       <DragIndicatorIcon />
-                                      <Typography variant="body2">
+                                      <Typography variant="body2" sx={{ fontSize: 16, lineHeight: 1.5, fontWeight: 400 }}>
                                         {ingredient.supplierItem.name}
                                       </Typography>
                                     </StyledIngredient>
