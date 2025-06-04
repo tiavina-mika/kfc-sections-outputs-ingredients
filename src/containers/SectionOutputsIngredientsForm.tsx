@@ -5,13 +5,13 @@ import {
   Button,
   IconButton,
   TextField,
-  Card,
-  CardContent,
   Typography,
   Box,
   Stack,
+  styled,
 } from "@mui/material";
 import { forwardRef } from "react";
+import DragIndicatorIcon from '@mui/icons-material/DragIndicator';
 
 type Ingredient = {
   supplierItem: {
@@ -37,44 +37,61 @@ type StepComponent = {
 };
 
 const stepComponents: StepComponent[] = [
-{
-  index: "1adb075d-84b0-443a-be90-83559b253e42",
-  type: "ingredient",
-  sectionOutputs: [
-    {
-      objectId: "so1",
-      index: "83559b253e42-1adb075d-84b0-443a-be90",
-      name: "Porc",
-      netWeight: 0.002,
-      type: "ingredient",
-      ingredients: [
-        {
-          supplierItem: {
-            objectId: "tKFVbHYlIP",
-            name: "Paprika fumé",
+  {
+    index: "1adb075d-84b0-443a-be90-83559b253e42",
+    type: "ingredient",
+    sectionOutputs: [
+      {
+        objectId: "so1",
+        index: "83559b253e42-1adb075d-84b0-443a-be90",
+        name: "Porc",
+        netWeight: 0.002,
+        type: "ingredient",
+        ingredients: [
+          {
+            supplierItem: {
+              objectId: "tKFVbHYlIP",
+              name: "Paprika fumé",
+            },
+            netWeight: 1,
           },
-          netWeight: 1,
-        },
-        {
-          supplierItem: {
-            objectId: "tKFVbHYlIP",
-            name: "Cumin moulu",
+          {
+            supplierItem: {
+              objectId: "tKFVbHYlIP",
+              name: "Cumin moulu",
+            },
+            netWeight: 1,
           },
-          netWeight: 1,
-        },
-      ],
-    },
-    {
-      objectId: "so2",
-      index: "be9083559b253e42-1adb075d-84b0-443a",
-      name: "Sauce lard",
-      netWeight: 0.003,
-      type: "ingredient",
-      ingredients: [],
-    },
-  ],
-},
+        ],
+      },
+      {
+        objectId: "so2",
+        index: "be9083559b253e42-1adb075d-84b0-443a",
+        name: "",
+        // name: "Sauce lard",
+        netWeight: 0.003,
+        type: "ingredient",
+        ingredients: [],
+      },
+    ],
+  },
 ];
+
+const StyledPart = styled(Box)({
+  padding: "16px 12px 8px 12px",
+  gap: "16px",
+  borderRadius: 8,
+  background: "#E3F2FD",
+});
+
+const StyledIngredient = styled(Box)({
+  padding: "8px",
+  display: "flex",
+  alignItems: "center",
+  gap: 8,
+  borderRadius: 8,
+  backgroundColor: "#fff"
+});
 
 export type SectionOutputsIngredientsFormValues = {
   sectionOutputs: {
@@ -87,6 +104,7 @@ const initialValues: SectionOutputsIngredientsFormValues = {
   sectionOutputs:
     stepComponents[0]?.sectionOutputs.map((so) => ({
       name: so.name,
+      type: so.type,
       ingredients: so.ingredients,
     })) || [],
 };
@@ -103,6 +121,7 @@ const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngre
   return (
     <Formik
       initialValues={initialValues}
+      // initialValues={{ sectionOutputs: []}}
       onSubmit={onSubmit}
       enableReinitialize
       innerRef={ref}
@@ -124,20 +143,19 @@ const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngre
                     </Button>
                   </Box>
                   <Stack spacing={2}>
-                    {values.sectionOutputs.map((section, idx) => (
-                      <Box
+                    {values.sectionOutputs.map((section, index) => (
+                      <StyledPart
                         display="flex"
                         alignItems="flex-start"
-                        gap={2}
-                        mb={2}
                       >
                         <Box flex={1}>
+                          {/* name field */}
                           <Field
                             as={TextField}
-                            name={`sectionOutputs.${idx}.name`}
-                            label="Nom de la partie"
+                            name={`sectionOutputs.${index}.name`}
+                            label={`Nom de la partie ${index + 1}`}
                             fullWidth
-                            variant="outlined"
+                            variant="standard"
                             size="small"
                           />
                           <Box mt={1} display="flex" gap={1} flexWrap="wrap">
@@ -149,42 +167,28 @@ const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngre
                                 Aucun ingrédient
                               </Typography>
                             ) : (
-                              section.ingredients.map((ingredient, i) => (
-                                <Card
-                                  key={i}
-                                  variant="outlined"
-                                  sx={{
-                                    minWidth: 120,
-                                    display: "inline-block",
-                                    mr: 1,
-                                    mb: 1,
-                                  }}
-                                >
-                                  <CardContent
-                                    sx={{
-                                      padding: "8px !important",
-                                      "&:last-child": { paddingBottom: "8px" },
-                                    }}
-                                  >
-                                    <Typography variant="body2">
-                                      {ingredient.supplierItem.name}
-                                    </Typography>
-                                  </CardContent>
-                                </Card>
+                              // ingredients card
+                              section.ingredients.map((ingredient, ingredientIndex) => (
+                                <StyledIngredient key={ingredientIndex}>
+                                  <DragIndicatorIcon />
+                                  <Typography variant="body2">
+                                    {ingredient.supplierItem.name}
+                                  </Typography>
+                                </StyledIngredient>
                               ))
                             )}
                           </Box>
                         </Box>
                         <IconButton
                           aria-label="Supprimer la partie"
-                          onClick={() => remove(idx)}
+                          onClick={() => remove(index)}
                           color="error"
                           sx={{ mt: 1 }}
                           disabled={values.sectionOutputs.length === 1}
                         >
                           <DeleteIcon />
                         </IconButton>
-                      </Box>
+                      </StyledPart>
                     ))}
                   </Stack>
                 </>
