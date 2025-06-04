@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState } from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -11,6 +12,7 @@ import Tooltip from '@mui/material/Tooltip';
 import EditIcon from '@mui/icons-material/Edit';
 import SectionOutputsIngredientsDialogForm from './SectionOutputsIngredientsDialog';
 import { Box, Typography } from '@mui/material';
+import { recipe } from '../utils/data';
 
 type Props = {
   sections: Record<string, any>[];
@@ -62,8 +64,10 @@ const Sections = ({ sections = [] }: Props) => {
       {/* -------- Dialog --------- */}
       <SectionOutputsIngredientsDialogForm
         onClose={handleClearSelectedSection}
-        open={!!selectedSection}
-        section={selectedSection}
+        // open={!!selectedSection}
+        // section={selectedSection}
+        open
+        section={recipe.sections[0]} // For demo purposes, using the first section
       />
 
       {/* If no sections, show a message */}
