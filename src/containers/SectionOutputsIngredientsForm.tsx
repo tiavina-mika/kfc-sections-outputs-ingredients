@@ -184,15 +184,15 @@ const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngre
                             )}
                           </Box>
                         </Box>
-                        <IconButton
-                          aria-label="Supprimer la partie"
-                          onClick={() => remove(index)}
-                          color="error"
-                          sx={{ mt: 1 }}
-                          disabled={values.sectionOutputs.length === 1}
-                        >
-                          <DeleteIcon />
-                        </IconButton>
+                        {/* delete a part */}
+                        {index > 1 && (
+                          <IconButton
+                            aria-label="Supprimer la partie"
+                            onClick={() => remove(index)}
+                          >
+                            <DeleteIcon />
+                          </IconButton>
+                        )}
                       </StyledPart>
                     ))}
                   </Stack>
