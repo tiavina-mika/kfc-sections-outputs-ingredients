@@ -13,6 +13,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import SectionOutputsIngredientsDialogForm from './SectionOutputsIngredientsDialog';
 import { Box, Typography } from '@mui/material';
 import { recipe } from '../utils/data';
+import type { SectionOutputsIngredientsFormValues } from './SectionOutputsIngredientsForm';
 
 type Props = {
   sections: Record<string, any>[];
@@ -23,6 +24,10 @@ const Sections = ({ sections = [] }: Props) => {
   const handleClearSelectedSection = () => {
     setSelectedSection(null);
   }
+
+  const handleConfirmSectionOutputs = (values: SectionOutputsIngredientsFormValues) => {
+    console.log("values", values);
+  };
 
   return (
     <>
@@ -68,6 +73,7 @@ const Sections = ({ sections = [] }: Props) => {
         // section={selectedSection}
         open
         section={recipe.sections[0]} // For demo purposes, using the first section
+        onSubmit={handleConfirmSectionOutputs}
       />
 
       {/* If no sections, show a message */}
