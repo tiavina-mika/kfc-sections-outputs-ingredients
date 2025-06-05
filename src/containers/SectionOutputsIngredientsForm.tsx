@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import DeleteIcon from "@mui/icons-material/Delete";
 import AddIcon from "@mui/icons-material/Add";
 import { Formik, FieldArray, Form, Field, type FormikProps } from "formik";
@@ -13,6 +14,7 @@ import {
 } from "@mui/material";
 import { forwardRef } from "react";
 import DragIndicatorIcon from '@mui/icons-material/DragIndicator';
+import { getSectionOutputsIngredientsFormInitialValues } from "../utils/step.utils";
 
 type Ingredient = {
   supplierItem: {
@@ -110,14 +112,14 @@ export type SectionOutputsIngredientsFormValues = {
   }[];
 };
 
-const initialValues: SectionOutputsIngredientsFormValues = {
-  sectionOutputs:
-    stepComponents[0]?.sectionOutputs.map((so) => ({
-      name: so.name,
-      type: so.type,
-      ingredients: so.ingredients,
-    })) || [],
-};
+// const initialValues: SectionOutputsIngredientsFormValues = {
+//   sectionOutputs:
+//     stepComponents[0]?.sectionOutputs.map((so) => ({
+//       name: so.name,
+//       type: so.type,
+//       ingredients: so.ingredients,
+//     })) || [],
+// };
 
 type Props = {
   onSubmit: (values: SectionOutputsIngredientsFormValues) => void;
@@ -125,13 +127,13 @@ type Props = {
 };
 
 const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngredientsFormValues>, Props>(
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   ({ onSubmit, section }, ref) => {
 
   return (
     <Formik
-      initialValues={initialValues}
-      // initialValues={{ sectionOutputs: []}}
+      // initialValues={initialValues}
+      initialValues={getSectionOutputsIngredientsFormInitialValues(section)}
+      validateOnBlur={false}
       onSubmit={onSubmit}
       enableReinitialize
       innerRef={ref}
@@ -153,7 +155,7 @@ const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngre
                     </Button>
                   </Box>
                   <Stack spacing={2}>
-                    {values.sectionOutputs.map((section, index) => (
+                    {values.sectionOutputs.map((sectionOutput: Record<string, any>, index: number) => (
                       <StyledPart
                         display="flex"
                         alignItems="flex-start"
@@ -171,11 +173,11 @@ const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngre
                           {/* ingredients field */}
                           <Grid container spacing={1} sx={{ flex: 1 }}>
                             {/* no ingredient */}
-                            {section.ingredients.length === 0 ? (
+                            {sectionOutput.ingredients.length === 0 ? (
                               <StyledNoIngredients size={6} />
                             ) : (
                               // with ingredients
-                              section.ingredients.map((ingredient, ingredientIndex) => (
+                              sectionOutput.ingredients.map((ingredient: Record<string, any>, ingredientIndex: number) => (
                                 <Grid size={6} key={ingredientIndex}>
                                   <StyledIngredient>
                                     <DragIndicatorIcon />
