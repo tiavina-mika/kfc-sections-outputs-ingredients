@@ -1,5 +1,5 @@
-[See the site](https://mika-kfc-sections-outputs-ingredients.netlify.app/)
-[See the live code source](https://stackblitz.com/~/github.com/tiavina-mika/kfc-sections-outputs-ingredients)
+- [See the site](https://mika-kfc-sections-outputs-ingredients.netlify.app/)
+- [See the live code source](https://stackblitz.com/~/github.com/tiavina-mika/kfc-sections-outputs-ingredients)
 
 
 ---
@@ -14,9 +14,6 @@ This ticket aims to open the modal for separation by ingredient.
 ## Business Case
 
 We have cooked meat in a sauce (which itself contains tomatoes, onions, herbs). Now we are removing the meat from the sauce.
-
-Test recipe:  
-https://kfc.preprod.foodcheri.com/products/recipe/productionSteps/GL4qUeOG8x
 
 ## Solution
 
