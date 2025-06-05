@@ -20,7 +20,6 @@ type Props = {
 const Sections = ({ sections = [] }: Props) => {
   const [sectionsList, setSectionsList] = useState<Record<string, any>[]>([]);
   const [selectedSection, setSelectedSection] = useState<Record<string, any> | null>(null);
-  console.log('selectedSection: ', selectedSection);
 
   useEffect(() => {
     setSectionsList(sections);
@@ -56,7 +55,7 @@ const Sections = ({ sections = [] }: Props) => {
               <TableCell>ID</TableCell>
               <TableCell>Name</TableCell>
               <TableCell>Steps Count</TableCell>
-              <TableCell>Output</TableCell>
+              <TableCell>Outputs</TableCell>
               <TableCell>Action</TableCell>
             </TableRow>
           </TableHead>
