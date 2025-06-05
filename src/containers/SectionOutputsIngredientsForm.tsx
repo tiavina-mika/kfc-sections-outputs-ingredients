@@ -13,11 +13,12 @@ import {
   Grid,
   type Theme,
 } from "@mui/material";
-import { forwardRef } from "react";
+import { forwardRef, useEffect, useState } from "react";
 import DragIndicatorIcon from '@mui/icons-material/DragIndicator';
 import { getSectionOutputsIngredientsFormInitialValues } from "../utils/step.utils";
 import StrictModeDroppable from "./StrictModeDroppable";
 import * as Yup from "yup";
+import type { SectionOutputsIngredientsFormValues } from "../types/section.type";
 
 
 const sectionOutputsIngredientsValidationSchema = Yup.object().shape({
@@ -37,13 +38,6 @@ const sectionOutputsIngredientsValidationSchema = Yup.object().shape({
   )
 });
 
-type Ingredient = {
-  supplierItem: {
-    objectId: string;
-    name: string;
-  };
-  netWeight: number;
-};
 
 type StyledDraggableCardProps = {
   isDragging: boolean;
@@ -98,20 +92,34 @@ const getError = (errors: Record<string, any>, index: number, fieldName: string)
   return errors.sectionOutputs[index][fieldName] as string | undefined;
 }
 
-export type SectionOutputsIngredientsFormValues = {
-  sectionOutputs: {
-    name: string;
-    ingredients: Ingredient[];
-  }[];
-};
+
 
 type Props = {
-  onSubmit: (values: SectionOutputsIngredientsFormValues) => void;
+  onSubmit: (values: SectionOutputsIngredientsFormValues ) => void;
   section: Record<string, any> | null;
 };
 
 const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngredientsFormValues>, Props>(
   ({ onSubmit, section }, ref) => {
+    const [sectionValues, setSectionValues] = useState<Record<string, any> | null>(null);
+
+    useEffect(() => {
+      if (section) {
+        setSectionValues(section);
+      }
+    }, [section]);
+
+    // const [initialValues, setInitialValues] = useState<SectionOutputsIngredientsFormValues | null>(null);
+
+    // useEffect(() => {
+    //   const sectionValues = getSectionOutputsIngredientsFormInitialValues(section);
+
+    //   if (!sectionValues) {
+    //     setInitialValues({ sectionOutputs: [] });
+    //     return;
+    //   }
+    //   setInitialValues(sectionValues as SectionOutputsIngredientsFormValues);
+    // }, [section]);
 
     const onDragEnd = (
       result: DropResult,
@@ -146,7 +154,7 @@ const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngre
 
     return (
       <Formik
-        initialValues={getSectionOutputsIngredientsFormInitialValues(section)}
+        initialValues={getSectionOutputsIngredientsFormInitialValues(sectionValues)}
         validateOnBlur={false}
         onSubmit={onSubmit}
         enableReinitialize
