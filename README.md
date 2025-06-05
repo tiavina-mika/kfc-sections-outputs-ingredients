@@ -1,69 +1,38 @@
-# React + TypeScript + Vite
+[See the site](https://mika-kfc-sections-outputs-ingredients.netlify.app/)
+[See the live code source](https://stackblitz.com/~/github.com/tiavina-mika/kfc-sections-outputs-ingredients)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Context
 
-## Expanding the ESLint configuration
+We want to allow separating preparations from a section and transferring parts of a section (such as sauces) into other sections.  
+This ticket aims to open the modal for separation by ingredient.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+⚠️ This ticket should be developed on a new branch ⚠️
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Business Case
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+We have cooked meat in a sauce (which itself contains tomatoes, onions, herbs). Now we are removing the meat from the sauce.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Test recipe:  
+https://kfc.preprod.foodcheri.com/products/recipe/productionSteps/GL4qUeOG8x
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Solution
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+After selecting "divide by ingredients" in the previous modal, open the following modal.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**Modal label:** Divide your section by distributing the ingredients into each part and assigning them a name.
+
+- You can add a new part.
+- Part names are editable text inputs.
+- You can drag and drop ingredients from one part to another.
+- If a part has no ingredients, display a "skeleton" instead.
+- All parts can be deleted except the first two.
+
+Figma
+
+**Focus: Ingredients**  
+Display all supplierItems contained in the last ProductionStep of the section.  
+These supplierItems may or may not be part of priorSteps (the example recipe contains both cases).  
+Note: In this modal, we only need their name, but when saving, we will also need their net weight (weight at the output of the section's last step).
