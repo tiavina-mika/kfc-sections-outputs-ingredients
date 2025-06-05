@@ -15,11 +15,10 @@ import {
 } from "@mui/material";
 import { forwardRef, useEffect, useState } from "react";
 import DragIndicatorIcon from '@mui/icons-material/DragIndicator';
+import * as Yup from "yup";
 import { getSectionOutputsIngredientsFormInitialValues } from "../utils/step.utils";
 import StrictModeDroppable from "./StrictModeDroppable";
-import * as Yup from "yup";
 import type { SectionOutputsIngredientsFormValues } from "../types/section.type";
-
 
 const sectionOutputsIngredientsValidationSchema = Yup.object().shape({
   sectionOutputs: Yup.array().of(
