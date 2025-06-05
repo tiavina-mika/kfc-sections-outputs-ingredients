@@ -128,7 +128,6 @@ type Props = {
 
 const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngredientsFormValues>, Props>(
   ({ onSubmit, section }, ref) => {
-      console.log('getSectionOutputsIngredientsFormInitialValues(section): ', getSectionOutputsIngredientsFormInitialValues(section));
 
   return (
     <Formik
