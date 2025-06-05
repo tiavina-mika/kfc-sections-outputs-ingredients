@@ -5,9 +5,10 @@ import {
   DialogActions,
   Button,
 } from "@mui/material";
-import SectionOutputsIngredientsForm, { type SectionOutputsIngredientsFormValues } from "./SectionOutputsIngredientsForm";
+import SectionOutputsIngredientsForm from "./SectionOutputsIngredientsForm";
 import type { FormikProps } from "formik";
 import { useRef } from "react";
+import type { SectionOutputsIngredientsFormValues } from "../types/section.type";
 
 const sx = {
   dialog: {
@@ -38,7 +39,6 @@ const SectionOutputsIngredientsDialogForm = ({
   const handleConfirm = () => {
     if (!formikRef.current) return;
     formikRef.current.submitForm();
-    onClose();
   };
 
 return (
