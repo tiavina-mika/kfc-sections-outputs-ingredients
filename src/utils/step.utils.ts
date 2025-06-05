@@ -1,11 +1,10 @@
-
 /**
  * Recursively collects all components with a `supplierItem` property from the provided step components and their nested prior steps.
  *
  * @param stepComponents - An array of step component objects to search through.
  * @returns An array of components that contain the `supplierItem` property.
  */
-export const getAllSupplierItemsFromStepComponents = (
+export const getAllSupplierItemsFromStepComponentsForSectionOutput = (
   stepComponents: Record<string, any>[] = []
 ): Record<string, any>[] => {
   const supplierItems: Record<string, any>[] = [];
@@ -45,14 +44,23 @@ export const getAllSupplierItemsFromStepComponents = (
  * @returns An array of ingredient objects collected from the last production step's components.
  */
 export const getAllIngredientsFromSection = (section: Record<string, any>) => {
-  const lastStep = section.productionSteps?.[section.productionSteps.length - 1]
-  if (!lastStep) return []
+  const productionSteps = section.productionSteps;
+  if (!Array.isArray(productionSteps) || productionSteps.length === 0) return [];
 
-  const stepComponents = lastStep.step?.stepComponents || []
-  
-  const collectedIngredients: Record<string, any>[] = getAllSupplierItemsFromStepComponents(stepComponents)
+  const lastStep = productionSteps[productionSteps.length - 1];
+  if (!lastStep) return [];
 
-  return collectedIngredients
+  // if reusable, get the last step from the reusable steps
+  if (lastStep.reusable) {
+    const reusableSteps = lastStep.step?.productionSteps;
+    if (!Array.isArray(reusableSteps) || reusableSteps.length === 0) return [];
+    const lastReusableStep = reusableSteps[reusableSteps.length - 1];
+    const collectedIngredients = getAllSupplierItemsFromStepComponentsForSectionOutput(lastReusableStep?.stepComponents || []);
+    return collectedIngredients;
+  }
+
+  const collectedIngredients = getAllSupplierItemsFromStepComponentsForSectionOutput(lastStep.step?.stepComponents || []);
+  return collectedIngredients;
 }
 
 /**
