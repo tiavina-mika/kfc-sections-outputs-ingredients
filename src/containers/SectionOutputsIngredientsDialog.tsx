@@ -5,9 +5,10 @@ import {
   DialogActions,
   Button,
 } from "@mui/material";
-import SectionOutputsIngredientsForm, { type SectionOutputsIngredientsFormValues } from "./SectionOutputsIngredientsForm";
 import type { FormikProps } from "formik";
 import { useRef } from "react";
+import type { SectionOutputsIngredientsFormValues } from "../types/section.type";
+import SectionOutputsIngredientsForm from "./SectionOutputsIngredientsForm";
 
 const sx = {
   dialog: {
@@ -23,7 +24,7 @@ const sx = {
 type Props = {
   open: boolean;
   onClose: () => void;
-  // onSubmit: (values: SectionOutputsIngredientsFormValues) => void;
+  onSubmit: (values: SectionOutputsIngredientsFormValues) => void;
   section: Record<string, any> | null;
 };
 
@@ -31,18 +32,13 @@ const SectionOutputsIngredientsDialogForm = ({
   open,
   onClose,
   section,
-  // onSubmit,
+  onSubmit,
 }: Props) => {
-    const formikRef = useRef<FormikProps<SectionOutputsIngredientsFormValues>>(null);
+  const formikRef = useRef<FormikProps<SectionOutputsIngredientsFormValues>>(null);
 
   const handleConfirm = () => {
     if (!formikRef.current) return;
     formikRef.current.submitForm();
-    onClose();
-  };
-
-  const handleValidate = (values: SectionOutputsIngredientsFormValues) => {
-    console.log("values", values);
   };
 
 return (
@@ -52,7 +48,7 @@ return (
       et attribuez-leur un nom.
     </DialogTitle>
     <DialogContent sx={{ px: 0 }}>
-      <SectionOutputsIngredientsForm ref={formikRef} onSubmit={handleValidate} section={section} />
+      <SectionOutputsIngredientsForm ref={formikRef} onSubmit={onSubmit} section={section} />
     </DialogContent>
     <DialogActions sx={{ justifyContent: "space-between", px: 0 }}>
       <Button onClick={onClose} variant="text">

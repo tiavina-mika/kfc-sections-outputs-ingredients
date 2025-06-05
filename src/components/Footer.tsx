@@ -1,4 +1,4 @@
-import { Container, Typography, Link, Box } from '@mui/material';
+import { Container, Typography, Link, Box, Stack } from '@mui/material';
 
 const linkOptions = [
   {
@@ -23,15 +23,17 @@ const Footer = () => {
   return (
     <Box component="footer" sx={{ py: 3, px: 2, mt: 'auto', backgroundColor: '#000', color: 'white' }}>
       <Container maxWidth="lg">
-        <Typography variant="body1">
-          {linkOptions.map((link, index) => (
-            <span key={index}>
-              <Link href={link.url} color="inherit" sx={{ mr: 2 }}>
-                {link.label}
-              </Link>
-            </span>
-          ))}
-        </Typography>
+        <Stack direction="row" justifyContent="center" alignItems="center">
+          <Typography variant="body1">
+            {linkOptions.map((link, index) => (
+              <span key={index}>
+                <Link href={link.url} color="inherit" sx={{ mr: 2 }}>
+                  {link.label}
+                </Link>
+              </span>
+            ))}
+          </Typography>
+        </Stack>
         <Typography variant="body2" color="inherit" align="center" sx={{ mt: 1 }}>
           {'© '}
           {new Date().getFullYear()}

@@ -5,6 +5,7 @@
  * @returns An array of components that contain the `supplierItem` property.
  */
 export const getAllSupplierItemsFromStepComponentsForSectionOutput = (
+  section: Record<string, any>,
   stepComponents: Record<string, any>[] = []
 ): Record<string, any>[] => {
   const supplierItems: Record<string, any>[] = [];
@@ -16,6 +17,7 @@ export const getAllSupplierItemsFromStepComponentsForSectionOutput = (
           netWeight: component.netWeight,
           supplierItem: { name: component.supplierItem.name },
           stepComponentIndex: component.index,
+          section: convertIdToPointer("Section", section.id),
         };
         if (priorStepsIndex) {
           values.priorStepsIndex = priorStepsIndex;
@@ -43,7 +45,7 @@ export const getAllSupplierItemsFromStepComponentsForSectionOutput = (
  * @param section - An object representing a section, expected to contain a `productionSteps` array.
  * @returns An array of ingredient objects collected from the last production step's components.
  */
-export const getAllIngredientsFromSection = (section: Record<string, any>) => {
+export const getAllIngredientsFromSection = (section: Record<string, any>): Record<string, any>[] => {
   const productionSteps = section.productionSteps;
   if (!Array.isArray(productionSteps) || productionSteps.length === 0) return [];
 
@@ -55,11 +57,11 @@ export const getAllIngredientsFromSection = (section: Record<string, any>) => {
     const reusableSteps = lastStep.step?.productionSteps;
     if (!Array.isArray(reusableSteps) || reusableSteps.length === 0) return [];
     const lastReusableStep = reusableSteps[reusableSteps.length - 1];
-    const collectedIngredients = getAllSupplierItemsFromStepComponentsForSectionOutput(lastReusableStep?.stepComponents || []);
+    const collectedIngredients = getAllSupplierItemsFromStepComponentsForSectionOutput(section, lastReusableStep?.stepComponents || []);
     return collectedIngredients;
   }
 
-  const collectedIngredients = getAllSupplierItemsFromStepComponentsForSectionOutput(lastStep.step?.stepComponents || []);
+  const collectedIngredients = getAllSupplierItemsFromStepComponentsForSectionOutput(section, lastStep.step?.stepComponents || []);
   return collectedIngredients;
 }
 
@@ -76,10 +78,15 @@ export const getSectionOutputsIngredientsFormInitialValues = (section: Record<st
     const supplierItems = section ? getAllIngredientsFromSection(section) : [];
 
     return {
+      // always 2 outputs by default, one for ingredients and one for empty output
       sectionOutputs: [
         {
           name: "",
           ingredients: supplierItems
+        },
+        {
+          name: "",
+          ingredients: []
         }
       ]
     };
@@ -87,4 +94,12 @@ export const getSectionOutputsIngredientsFormInitialValues = (section: Record<st
   return {
     sectionOutputs: section.sectionOutputs
   } 
+}
+
+export const convertIdToPointer = (className: string, id: string) => {
+	return {
+		__type: "Pointer",
+		className,
+		objectId: id
+	}
 }
