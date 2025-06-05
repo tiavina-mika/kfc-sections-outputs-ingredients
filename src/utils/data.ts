@@ -3,7 +3,7 @@ export const recipe = {
     "sections": [
         {
             "id": "jU6ln8xFer",
-            "index": "ccbd665d-95e2-43e2-9194-d6f57ad66df1",
+            "index": "7f949a39-bb9d-44a5-980f-6f20e28a3e8f",
             "name": "Porc et sauce soja au piment - SEPARER LA VIANDE ET LA SAUCE DIVISER LA SAUCE EN TROIS",
             "generic": false,
             "print": true,
@@ -11,7 +11,7 @@ export const recipe = {
             "steps": [
                 {
                     "name": "",
-                    "index": "ea15df64-eafb-4c95-af1e-db8ec66b662f",
+                    "index": "ea105c41-a3a3-42c1-8490-5f244e51d019",
                     "description": "NE PAS SALER. Parer le porc. Saisir la viande dans l'huile. Débarrasser jusqu'à l'étape suivante. Assaisonner avec 1/3 de la sauce soja-piment après effilochage.",
                     "ingredients": [
                         {
@@ -22,7 +22,7 @@ export const recipe = {
                             "priorStepSupplierItems": null,
                             "supplierItem": {
                                 "id": "Prlq12IHxu",
-                                "index": "ca2d48db-b0da-4d65-8730-2be6bd6150b6",
+                                "index": "beb365e0-981a-41ae-991d-19676fdf8ec0",
                                 "name": "epaule de porc désossée découennée dégraissée",
                                 "pricePerKg": 5.2,
                                 "cookingModes": [
@@ -103,7 +103,7 @@ export const recipe = {
                             "priorStepSupplierItems": null,
                             "supplierItem": {
                                 "id": "MEUHSd9iiF",
-                                "index": "876f6f4c-176c-4600-95b6-3781cf2343c6",
+                                "index": "a6b7a0a4-cf8c-425d-85d2-287004c580a2",
                                 "name": "x-rutabaga",
                                 "pricePerKg": 1,
                                 "cookingModes": [
@@ -183,7 +183,7 @@ export const recipe = {
                 },
                 {
                     "name": "",
-                    "index": "59096952-8bfa-4f42-b114-cc536ce03faa",
+                    "index": "6ffa6d9d-a24d-44db-aebb-fece9acc93d3",
                     "description": "NE PAS SALER. Émincer grossièrement les oignons. Dans la même sauteuse, les faire suer avec le piment, l'ail et le gingembre. \nRemettre la viande. Couvrir à hauteur avec l'eau et le soja. Ajouter le sucre. Cuire en autoclave jusqu'à totale tendreté. Débarrasser la viande. EFFILOCHER la viande encore chaude à la main.\nMixer l'ensemble des ingrédients restant dans la sauteuse. La sauce obtenue a 3 usages : assaisonnement de viande (1/3), assaisonnement des pâtes (1/3), cuisson des carottes et poivrons (1/3).",
                     "ingredients": [
                         {
@@ -194,7 +194,7 @@ export const recipe = {
                             "priorStepSupplierItems": null,
                             "supplierItem": {
                                 "id": "jeZRFmGVlC",
-                                "index": "6316405a-fd95-41dd-b137-d94b17a7e77b",
+                                "index": "65cf196e-9d97-4e38-8c1a-7365f956721e",
                                 "name": "gingembre frais",
                                 "pricePerKg": 5.85,
                                 "cookingModes": [
@@ -274,7 +274,7 @@ export const recipe = {
                             "priorStepSupplierItems": null,
                             "supplierItem": {
                                 "id": "nTAbYaAURy",
-                                "index": "65acf348-3dc4-4c02-950e-f61ce6c968f3",
+                                "index": "3140184a-2b2c-41c6-a4c2-f9f59edad800",
                                 "name": "tamari",
                                 "pricePerKg": 6.37,
                                 "cookingModes": [
@@ -363,7 +363,7 @@ export const recipe = {
                             "priorStepSupplierItems": null,
                             "supplierItem": {
                                 "id": "BhkwMhoEpr",
-                                "index": "d48b09e3-9bbd-4cc9-b8d9-4d51a86bd78b",
+                                "index": "7cce54e4-473d-4c53-9c24-daafc2eefa43",
                                 "name": "sucre semoule",
                                 "pricePerKg": 0.61,
                                 "cookingModes": [
@@ -443,7 +443,7 @@ export const recipe = {
                             "priorStepSupplierItems": null,
                             "supplierItem": {
                                 "id": "RglnmPJ0qE",
-                                "index": "ef41e388-325e-468e-9e97-836b16dd1935",
+                                "index": "73546c5e-4acb-499e-8aa5-bc898522a6b5",
                                 "name": "piment rouge surg",
                                 "pricePerKg": 12.36,
                                 "cookingModes": [
@@ -523,7 +523,7 @@ export const recipe = {
                             "priorStepSupplierItems": null,
                             "supplierItem": {
                                 "id": "FymZT9QEny",
-                                "index": "ac7b62de-3b05-4a73-9511-1667d8a58ebf",
+                                "index": "eaa80ece-a22a-4567-ab5a-13ae1439c5ef",
                                 "name": "eau",
                                 "pricePerKg": null,
                                 "cookingModes": [
@@ -603,7 +603,7 @@ export const recipe = {
                             "priorStepSupplierItems": null,
                             "supplierItem": {
                                 "id": "yXRTenApOw",
-                                "index": "096bedda-9ca1-4814-a85a-aa16fe0ed223",
+                                "index": "09636efc-c9ef-4844-ba3a-678e12e6d26d",
                                 "name": "ail epluche (duplicata)",
                                 "pricePerKg": 20000.96,
                                 "cookingModes": [
@@ -683,7 +683,7 @@ export const recipe = {
                             "priorStepSupplierItems": null,
                             "supplierItem": {
                                 "id": "EFfktxILfU",
-                                "index": "3ba41a0b-aca5-4fbd-b608-b5f2dc561917",
+                                "index": "4ca08734-73ea-422a-b7fa-a63edcce19cd",
                                 "name": "oignon jaune épluché (m)",
                                 "pricePerKg": 1.2,
                                 "cookingModes": [
@@ -777,7 +777,7 @@ export const recipe = {
                                 "priorStepSupplierItems": null,
                                 "supplierItem": {
                                     "id": "GdaZhHol81",
-                                    "index": "c5db9af2-630c-4076-858a-52c38394a412",
+                                    "index": "4ee9e7f3-417a-4588-a76e-4777970d0258",
                                     "name": "epaule de porc désossée découennée dégraissée",
                                     "pricePerKg": 5.2,
                                     "cookingModes": [
@@ -950,7 +950,7 @@ export const recipe = {
                                 "priorStepSupplierItems": null,
                                 "supplierItem": {
                                     "id": "EDF9NYZx9t",
-                                    "index": "fcf521da-1024-4ec9-91be-f114fb09ab70",
+                                    "index": "5bd02bc2-03c8-4bcc-99be-709969f8c01c",
                                     "name": "huile d'olive",
                                     "pricePerKg": 4.19,
                                     "cookingModes": [
@@ -1014,7 +1014,7 @@ export const recipe = {
                                     "commercialName": {
                                         "name": "huile d'olive bio",
                                         "createdAt": "2019-01-17T17:18:11.464Z",
-                                        "updatedAt": "2023-12-05T16:08:54.103Z",
+                                        "updatedAt": "2025-05-26T09:15:57.569Z",
                                         "group": {
                                             "__type": "Pointer",
                                             "className": "GroupsIngredients",
@@ -1040,9 +1040,9 @@ export const recipe = {
                                             "11",
                                             "12"
                                         ],
-                                        "recipeQuantity": 2630,
+                                        "recipeQuantity": 1380,
                                         "complexity": 1,
-                                        "exportEtiquettable": 1701792534066,
+                                        "exportEtiquettable": 1748250957547,
                                         "secondOrigin": 0,
                                         "objectId": "XLYeB3foeb",
                                         "__type": "Object",
@@ -1173,7 +1173,7 @@ export const recipe = {
                                 "priorStepSupplierItems": null,
                                 "supplierItem": {
                                     "id": "4LVBCKJ5i2",
-                                    "index": "7f324f8e-742d-41a9-8a81-c0bf0713e0e9",
+                                    "index": "91cec564-3278-4ab7-b279-5ad7a85d6560",
                                     "name": "(sub) oignons eminces surg 2,5kg",
                                     "pricePerKg": 0.82,
                                     "cookingModes": [
@@ -1515,181 +1515,9 @@ export const recipe = {
                                                 ]
                                             },
                                             "site": {
-                                                "createdAt": "2021-10-22T09:26:37.327Z",
-                                                "updatedAt": "2023-08-17T14:55:28.628Z",
-                                                "kitchenAreas": [
-                                                    {
-                                                        "kitchenArea": {
-                                                            "name": "Légumerie",
-                                                            "createdAt": "2022-10-03T13:28:13.048Z",
-                                                            "updatedAt": "2022-10-06T13:56:49.815Z",
-                                                            "objectId": "muRmEs79Dk",
-                                                            "__type": "Object",
-                                                            "className": "KitchenArea"
-                                                        },
-                                                        "order": 1,
-                                                        "machinesCount": 3
-                                                    },
-                                                    {
-                                                        "kitchenArea": {
-                                                            "name": "Déconditionnement",
-                                                            "createdAt": "2023-02-21T14:47:27.491Z",
-                                                            "updatedAt": "2023-02-21T14:47:27.491Z",
-                                                            "objectId": "48AIvqmOq4",
-                                                            "__type": "Object",
-                                                            "className": "KitchenArea"
-                                                        },
-                                                        "order": 2
-                                                    },
-                                                    {
-                                                        "kitchenArea": {
-                                                            "name": "Découpe viande",
-                                                            "createdAt": "2023-08-17T14:53:52.191Z",
-                                                            "updatedAt": "2023-08-17T14:53:52.191Z",
-                                                            "objectId": "0zjDqU8S1t",
-                                                            "__type": "Object",
-                                                            "className": "KitchenArea"
-                                                        },
-                                                        "order": 3
-                                                    },
-                                                    {
-                                                        "kitchenArea": {
-                                                            "name": "Prépa froide",
-                                                            "createdAt": "2022-10-03T13:28:13.281Z",
-                                                            "updatedAt": "2022-11-07T10:29:10.708Z",
-                                                            "objectId": "ZYbxuJSDYI",
-                                                            "__type": "Object",
-                                                            "className": "KitchenArea"
-                                                        },
-                                                        "order": 4,
-                                                        "machinesCount": 2
-                                                    },
-                                                    {
-                                                        "kitchenArea": {
-                                                            "name": "Prépa chaude",
-                                                            "createdAt": "2022-10-03T13:28:13.742Z",
-                                                            "updatedAt": "2022-10-03T13:28:13.742Z",
-                                                            "objectId": "5TwsE45cjw",
-                                                            "__type": "Object",
-                                                            "className": "KitchenArea"
-                                                        },
-                                                        "order": 5,
-                                                        "machinesCount": 0
-                                                    }
-                                                ],
-                                                "name": "Sucy",
-                                                "deliveryAddress": {
-                                                    "line1": "Zone Industrielle des Marais, 7 Rue de la Scierie",
-                                                    "line2": "",
-                                                    "codeAccess": "",
-                                                    "zipCode": "94370",
-                                                    "city": "Sucy-en-Brie",
-                                                    "country": "France"
-                                                },
-                                                "invoiceAddress": {
-                                                    "line1": "110 Avenue de la République",
-                                                    "line2": "",
-                                                    "codeAccess": "",
-                                                    "zipCode": "75011",
-                                                    "city": "Paris",
-                                                    "country": "France"
-                                                },
-                                                "stockZones": [
-                                                    {
-                                                        "name": "BOF",
-                                                        "spot": "Chambre froide",
-                                                        "temperature": "-4",
-                                                        "storeNumber": "1000",
-                                                        "comments": "-",
-                                                        "createdAt": "2021-10-22T09:27:11.902Z",
-                                                        "updatedAt": "2022-07-12T10:08:00.998Z",
-                                                        "_objCount": 105069,
-                                                        "id": "PxgIX16Aej",
-                                                        "objectId": "PxgIX16Aej",
-                                                        "__type": "Object",
-                                                        "className": "StockZone"
-                                                    },
-                                                    {
-                                                        "name": "Économat",
-                                                        "spot": "Hohoho",
-                                                        "temperature": "1000",
-                                                        "storeNumber": "10000",
-                                                        "comments": "-",
-                                                        "createdAt": "2021-10-22T09:30:03.563Z",
-                                                        "updatedAt": "2022-02-22T10:22:11.434Z",
-                                                        "objectId": "oWe5OPUjt7",
-                                                        "__type": "Object",
-                                                        "className": "StockZone"
-                                                    },
-                                                    {
-                                                        "name": "Palette Épicerie",
-                                                        "spot": "Sucy 3",
-                                                        "temperature": "0",
-                                                        "storeNumber": "1",
-                                                        "comments": "-",
-                                                        "createdAt": "2021-10-22T09:31:03.563Z",
-                                                        "updatedAt": "2022-02-22T10:22:28.738Z",
-                                                        "objectId": "ewmEK71A7N",
-                                                        "__type": "Object",
-                                                        "className": "StockZone"
-                                                    },
-                                                    {
-                                                        "name": "Stockage packaging",
-                                                        "spot": "fjeaiofew",
-                                                        "temperature": "12",
-                                                        "storeNumber": "9213",
-                                                        "comments": "-",
-                                                        "createdAt": "2022-07-13T09:25:10.974Z",
-                                                        "updatedAt": "2022-07-13T09:25:10.974Z",
-                                                        "objectId": "7AllHgWVJm",
-                                                        "__type": "Object",
-                                                        "className": "StockZone"
-                                                    },
-                                                    {
-                                                        "name": "CF Fruits et Légumes",
-                                                        "spot": "Sucy 5",
-                                                        "temperature": "213211",
-                                                        "storeNumber": "32132",
-                                                        "comments": "-",
-                                                        "createdAt": "2023-02-21T14:47:40.906Z",
-                                                        "updatedAt": "2023-02-21T14:47:40.906Z",
-                                                        "objectId": "X29XFI2GUx",
-                                                        "__type": "Object",
-                                                        "className": "StockZone"
-                                                    }
-                                                ],
-                                                "type": "",
-                                                "image": null,
-                                                "news": "Hello Sucy",
-                                                "packagingLines": [
-                                                    {
-                                                        "name": "Ligne barquettage operculé",
-                                                        "createdAt": "2024-03-08T16:23:01.535Z",
-                                                        "updatedAt": "2024-03-08T16:23:01.535Z",
-                                                        "objectId": "a04ToQQOcY",
-                                                        "__type": "Object",
-                                                        "className": "PackagingLine"
-                                                    },
-                                                    {
-                                                        "name": "Ligne de barquettage 02",
-                                                        "createdAt": "2024-03-08T09:20:31.361Z",
-                                                        "updatedAt": "2024-03-08T09:20:31.361Z",
-                                                        "objectId": "gaDWW6yIqg",
-                                                        "__type": "Object",
-                                                        "className": "PackagingLine"
-                                                    },
-                                                    {
-                                                        "name": "Packaging line 01",
-                                                        "createdAt": "2024-03-08T09:20:11.147Z",
-                                                        "updatedAt": "2024-03-08T09:20:11.147Z",
-                                                        "objectId": "k3IA0GrGYV",
-                                                        "__type": "Object",
-                                                        "className": "PackagingLine"
-                                                    }
-                                                ],
-                                                "objectId": "UPK3lbT78C",
-                                                "__type": "Object",
-                                                "className": "Site"
+                                                "__type": "Pointer",
+                                                "className": "Site",
+                                                "objectId": "UPK3lbT78C"
                                             },
                                             "stockZone": {
                                                 "__type": "Pointer",
@@ -1726,7 +1554,7 @@ export const recipe = {
                                 "priorStepSupplierItems": null,
                                 "supplierItem": {
                                     "id": "Lu1xX8fhWH",
-                                    "index": "3c8ab23c-8521-4040-ad5d-7e9a3d098493",
+                                    "index": "cac1c077-0513-42c0-802a-21fb85524e65",
                                     "name": "ail epluche",
                                     "pricePerKg": 20000.96,
                                     "cookingModes": [
@@ -1790,7 +1618,7 @@ export const recipe = {
                                     "commercialName": {
                                         "name": "ailsss",
                                         "createdAt": "2019-01-17T17:18:06.577Z",
-                                        "updatedAt": "2025-06-03T12:37:49.870Z",
+                                        "updatedAt": "2025-06-04T10:10:05.282Z",
                                         "group": {
                                             "__type": "Pointer",
                                             "className": "GroupsIngredients",
@@ -1816,9 +1644,9 @@ export const recipe = {
                                             "11",
                                             "12"
                                         ],
-                                        "recipeQuantity": 934,
+                                        "recipeQuantity": 933,
                                         "complexity": 3,
-                                        "exportEtiquettable": 1748954269853,
+                                        "exportEtiquettable": 1749031805257,
                                         "objectId": "hMHCfhy185",
                                         "__type": "Object",
                                         "className": "CommercialName"
@@ -1829,28 +1657,17 @@ export const recipe = {
                                     "transformationModes": [
                                         {
                                             "transformationMode": {
-                                                "name": "Retrait",
-                                                "transformationType": "MIXED",
-                                                "createdAt": "2024-12-28T14:29:44.488Z",
-                                                "updatedAt": "2025-02-05T13:45:41.190Z",
-                                                "useInRecipeCount": 1,
-                                                "useInReusableStepCount": 1,
-                                                "objectId": "5565b8TltD",
-                                                "__type": "Object",
-                                                "className": "TransformationModes"
+                                                "__type": "Pointer",
+                                                "className": "TransformationModes",
+                                                "objectId": "5565b8TltD"
                                             },
                                             "transformationRate": 0.00001
                                         },
                                         {
                                             "transformationMode": {
-                                                "name": "Sauté",
-                                                "transformationType": "COOKING",
-                                                "createdAt": "2022-10-14T14:42:58.037Z",
-                                                "updatedAt": "2022-10-14T14:42:58.037Z",
-                                                "useInRecipeCount": 1,
-                                                "objectId": "GEzjFqccMt",
-                                                "__type": "Object",
-                                                "className": "TransformationModes"
+                                                "__type": "Pointer",
+                                                "className": "TransformationModes",
+                                                "objectId": "GEzjFqccMt"
                                             },
                                             "transformationRate": 80
                                         }
@@ -1908,7 +1725,7 @@ export const recipe = {
                                 "priorStepSupplierItems": null,
                                 "supplierItem": {
                                     "id": "WGyvPVWae4",
-                                    "index": "c1a7d043-eea5-4dda-9ac5-64be30343903",
+                                    "index": "84cc5e91-0acf-4eb0-b8d2-3f366619e01d",
                                     "name": "piment rouge surg",
                                     "pricePerKg": 12.391,
                                     "cookingModes": [
@@ -2011,28 +1828,17 @@ export const recipe = {
                                     "transformationModes": [
                                         {
                                             "transformationMode": {
-                                                "name": "Retrait",
-                                                "transformationType": "MIXED",
-                                                "createdAt": "2024-12-28T14:29:44.488Z",
-                                                "updatedAt": "2025-02-05T13:45:41.190Z",
-                                                "useInRecipeCount": 1,
-                                                "useInReusableStepCount": 1,
-                                                "objectId": "5565b8TltD",
-                                                "__type": "Object",
-                                                "className": "TransformationModes"
+                                                "__type": "Pointer",
+                                                "className": "TransformationModes",
+                                                "objectId": "5565b8TltD"
                                             },
                                             "transformationRate": 0
                                         },
                                         {
                                             "transformationMode": {
-                                                "name": "Sauté",
-                                                "transformationType": "COOKING",
-                                                "createdAt": "2022-10-14T14:42:58.037Z",
-                                                "updatedAt": "2022-10-14T14:42:58.037Z",
-                                                "useInRecipeCount": 1,
-                                                "objectId": "GEzjFqccMt",
-                                                "__type": "Object",
-                                                "className": "TransformationModes"
+                                                "__type": "Pointer",
+                                                "className": "TransformationModes",
+                                                "objectId": "GEzjFqccMt"
                                             },
                                             "transformationRate": 80,
                                             "useInReusableStepCount": 1,
@@ -2091,7 +1897,7 @@ export const recipe = {
                                 "priorStepSupplierItems": null,
                                 "supplierItem": {
                                     "id": "Qya0Ys8P6f",
-                                    "index": "e1d16615-20f0-4cc7-b2bc-6a3e8bc1cd0d",
+                                    "index": "9962beab-832d-4b3c-bc63-e522f74da92f",
                                     "name": "gingembre frais",
                                     "pricePerKg": 5.85,
                                     "cookingModes": [
@@ -2525,181 +2331,9 @@ export const recipe = {
                                             },
                                             "supplierArticleName": "EPAULE 3D PORC SVD VPF",
                                             "site": {
-                                                "createdAt": "2021-10-22T09:26:37.327Z",
-                                                "updatedAt": "2023-08-17T14:55:28.628Z",
-                                                "kitchenAreas": [
-                                                    {
-                                                        "kitchenArea": {
-                                                            "name": "Légumerie",
-                                                            "createdAt": "2022-10-03T13:28:13.048Z",
-                                                            "updatedAt": "2022-10-06T13:56:49.815Z",
-                                                            "objectId": "muRmEs79Dk",
-                                                            "__type": "Object",
-                                                            "className": "KitchenArea"
-                                                        },
-                                                        "order": 1,
-                                                        "machinesCount": 3
-                                                    },
-                                                    {
-                                                        "kitchenArea": {
-                                                            "name": "Déconditionnement",
-                                                            "createdAt": "2023-02-21T14:47:27.491Z",
-                                                            "updatedAt": "2023-02-21T14:47:27.491Z",
-                                                            "objectId": "48AIvqmOq4",
-                                                            "__type": "Object",
-                                                            "className": "KitchenArea"
-                                                        },
-                                                        "order": 2
-                                                    },
-                                                    {
-                                                        "kitchenArea": {
-                                                            "name": "Découpe viande",
-                                                            "createdAt": "2023-08-17T14:53:52.191Z",
-                                                            "updatedAt": "2023-08-17T14:53:52.191Z",
-                                                            "objectId": "0zjDqU8S1t",
-                                                            "__type": "Object",
-                                                            "className": "KitchenArea"
-                                                        },
-                                                        "order": 3
-                                                    },
-                                                    {
-                                                        "kitchenArea": {
-                                                            "name": "Prépa froide",
-                                                            "createdAt": "2022-10-03T13:28:13.281Z",
-                                                            "updatedAt": "2022-11-07T10:29:10.708Z",
-                                                            "objectId": "ZYbxuJSDYI",
-                                                            "__type": "Object",
-                                                            "className": "KitchenArea"
-                                                        },
-                                                        "order": 4,
-                                                        "machinesCount": 2
-                                                    },
-                                                    {
-                                                        "kitchenArea": {
-                                                            "name": "Prépa chaude",
-                                                            "createdAt": "2022-10-03T13:28:13.742Z",
-                                                            "updatedAt": "2022-10-03T13:28:13.742Z",
-                                                            "objectId": "5TwsE45cjw",
-                                                            "__type": "Object",
-                                                            "className": "KitchenArea"
-                                                        },
-                                                        "order": 5,
-                                                        "machinesCount": 0
-                                                    }
-                                                ],
-                                                "name": "Sucy",
-                                                "deliveryAddress": {
-                                                    "line1": "Zone Industrielle des Marais, 7 Rue de la Scierie",
-                                                    "line2": "",
-                                                    "codeAccess": "",
-                                                    "zipCode": "94370",
-                                                    "city": "Sucy-en-Brie",
-                                                    "country": "France"
-                                                },
-                                                "invoiceAddress": {
-                                                    "line1": "110 Avenue de la République",
-                                                    "line2": "",
-                                                    "codeAccess": "",
-                                                    "zipCode": "75011",
-                                                    "city": "Paris",
-                                                    "country": "France"
-                                                },
-                                                "stockZones": [
-                                                    {
-                                                        "name": "BOF",
-                                                        "spot": "Chambre froide",
-                                                        "temperature": "-4",
-                                                        "storeNumber": "1000",
-                                                        "comments": "-",
-                                                        "createdAt": "2021-10-22T09:27:11.902Z",
-                                                        "updatedAt": "2022-07-12T10:08:00.998Z",
-                                                        "_objCount": 105069,
-                                                        "id": "PxgIX16Aej",
-                                                        "objectId": "PxgIX16Aej",
-                                                        "__type": "Object",
-                                                        "className": "StockZone"
-                                                    },
-                                                    {
-                                                        "name": "Économat",
-                                                        "spot": "Hohoho",
-                                                        "temperature": "1000",
-                                                        "storeNumber": "10000",
-                                                        "comments": "-",
-                                                        "createdAt": "2021-10-22T09:30:03.563Z",
-                                                        "updatedAt": "2022-02-22T10:22:11.434Z",
-                                                        "objectId": "oWe5OPUjt7",
-                                                        "__type": "Object",
-                                                        "className": "StockZone"
-                                                    },
-                                                    {
-                                                        "name": "Palette Épicerie",
-                                                        "spot": "Sucy 3",
-                                                        "temperature": "0",
-                                                        "storeNumber": "1",
-                                                        "comments": "-",
-                                                        "createdAt": "2021-10-22T09:31:03.563Z",
-                                                        "updatedAt": "2022-02-22T10:22:28.738Z",
-                                                        "objectId": "ewmEK71A7N",
-                                                        "__type": "Object",
-                                                        "className": "StockZone"
-                                                    },
-                                                    {
-                                                        "name": "Stockage packaging",
-                                                        "spot": "fjeaiofew",
-                                                        "temperature": "12",
-                                                        "storeNumber": "9213",
-                                                        "comments": "-",
-                                                        "createdAt": "2022-07-13T09:25:10.974Z",
-                                                        "updatedAt": "2022-07-13T09:25:10.974Z",
-                                                        "objectId": "7AllHgWVJm",
-                                                        "__type": "Object",
-                                                        "className": "StockZone"
-                                                    },
-                                                    {
-                                                        "name": "CF Fruits et Légumes",
-                                                        "spot": "Sucy 5",
-                                                        "temperature": "213211",
-                                                        "storeNumber": "32132",
-                                                        "comments": "-",
-                                                        "createdAt": "2023-02-21T14:47:40.906Z",
-                                                        "updatedAt": "2023-02-21T14:47:40.906Z",
-                                                        "objectId": "X29XFI2GUx",
-                                                        "__type": "Object",
-                                                        "className": "StockZone"
-                                                    }
-                                                ],
-                                                "type": "",
-                                                "image": null,
-                                                "news": "Hello Sucy",
-                                                "packagingLines": [
-                                                    {
-                                                        "name": "Ligne barquettage operculé",
-                                                        "createdAt": "2024-03-08T16:23:01.535Z",
-                                                        "updatedAt": "2024-03-08T16:23:01.535Z",
-                                                        "objectId": "a04ToQQOcY",
-                                                        "__type": "Object",
-                                                        "className": "PackagingLine"
-                                                    },
-                                                    {
-                                                        "name": "Ligne de barquettage 02",
-                                                        "createdAt": "2024-03-08T09:20:31.361Z",
-                                                        "updatedAt": "2024-03-08T09:20:31.361Z",
-                                                        "objectId": "gaDWW6yIqg",
-                                                        "__type": "Object",
-                                                        "className": "PackagingLine"
-                                                    },
-                                                    {
-                                                        "name": "Packaging line 01",
-                                                        "createdAt": "2024-03-08T09:20:11.147Z",
-                                                        "updatedAt": "2024-03-08T09:20:11.147Z",
-                                                        "objectId": "k3IA0GrGYV",
-                                                        "__type": "Object",
-                                                        "className": "PackagingLine"
-                                                    }
-                                                ],
-                                                "objectId": "UPK3lbT78C",
-                                                "__type": "Object",
-                                                "className": "Site"
+                                                "__type": "Pointer",
+                                                "className": "Site",
+                                                "objectId": "UPK3lbT78C"
                                             },
                                             "stockZone": {
                                                 "__type": "Pointer",
@@ -2844,7 +2478,7 @@ export const recipe = {
                                             "commercialName": {
                                                 "name": "huile d'olive bio",
                                                 "createdAt": "2019-01-17T17:18:11.464Z",
-                                                "updatedAt": "2023-12-05T16:08:54.103Z",
+                                                "updatedAt": "2025-05-26T09:15:57.569Z",
                                                 "group": {
                                                     "__type": "Pointer",
                                                     "className": "GroupsIngredients",
@@ -2870,9 +2504,9 @@ export const recipe = {
                                                     "11",
                                                     "12"
                                                 ],
-                                                "recipeQuantity": 2630,
+                                                "recipeQuantity": 1380,
                                                 "complexity": 1,
-                                                "exportEtiquettable": 1701792534066,
+                                                "exportEtiquettable": 1748250957547,
                                                 "secondOrigin": 0,
                                                 "objectId": "XLYeB3foeb",
                                                 "__type": "Object",
@@ -2925,42 +2559,9 @@ export const recipe = {
                                             },
                                             "supplierArticleName": "HUILE D'OLIVE BIO 5L",
                                             "site": {
-                                                "deliveryAddress": {
-                                                    "line1": "Test",
-                                                    "line2": "",
-                                                    "codeAccess": "",
-                                                    "zipCode": "69000",
-                                                    "city": "Lyon",
-                                                    "country": "France"
-                                                },
-                                                "invoiceAddress": {
-                                                    "line1": "Test",
-                                                    "line2": "",
-                                                    "codeAccess": "",
-                                                    "zipCode": "69000",
-                                                    "city": "Lyon",
-                                                    "country": "France"
-                                                },
-                                                "stockZones": [
-                                                    {
-                                                        "__type": "Pointer",
-                                                        "className": "StockZone",
-                                                        "objectId": "hbmLKLjEmA"
-                                                    },
-                                                    {
-                                                        "__type": "Pointer",
-                                                        "className": "StockZone",
-                                                        "objectId": "OrNvXeZs56"
-                                                    }
-                                                ],
-                                                "name": "Lyon",
-                                                "type": "",
-                                                "image": null,
-                                                "createdAt": "2022-02-22T10:21:03.580Z",
-                                                "updatedAt": "2022-05-24T10:40:08.873Z",
-                                                "objectId": "hNvU2RuAZW",
-                                                "__type": "Object",
-                                                "className": "Site"
+                                                "__type": "Pointer",
+                                                "className": "Site",
+                                                "objectId": "hNvU2RuAZW"
                                             },
                                             "stockZone": {
                                                 "__type": "Pointer",
@@ -2997,7 +2598,7 @@ export const recipe = {
                                 "priorStepSupplierItems": null,
                                 "supplierItem": {
                                     "id": "FymZT9QEny",
-                                    "index": "47f58793-ff72-4467-bfab-9936a6f48f0c",
+                                    "index": "24fc008d-a2d0-4a9f-ab87-c46e19a0786a",
                                     "name": "eau",
                                     "pricePerKg": null,
                                     "cookingModes": [
@@ -3100,27 +2701,17 @@ export const recipe = {
                                     "transformationModes": [
                                         {
                                             "transformationMode": {
-                                                "name": "vapeur / blanchi",
-                                                "transformationType": "COOKING",
-                                                "createdAt": "2024-12-15T18:46:36.603Z",
-                                                "updatedAt": "2024-12-15T18:46:36.603Z",
-                                                "objectId": "UfawkqkoPy",
-                                                "__type": "Object",
-                                                "className": "TransformationModes"
+                                                "__type": "Pointer",
+                                                "className": "TransformationModes",
+                                                "objectId": "UfawkqkoPy"
                                             },
                                             "transformationRate": 0
                                         },
                                         {
                                             "transformationMode": {
-                                                "name": "Retrait",
-                                                "transformationType": "MIXED",
-                                                "createdAt": "2024-12-28T14:29:44.488Z",
-                                                "updatedAt": "2025-02-05T13:45:41.190Z",
-                                                "useInRecipeCount": 1,
-                                                "useInReusableStepCount": 1,
-                                                "objectId": "5565b8TltD",
-                                                "__type": "Object",
-                                                "className": "TransformationModes"
+                                                "__type": "Pointer",
+                                                "className": "TransformationModes",
+                                                "objectId": "5565b8TltD"
                                             },
                                             "transformationRate": 0.00001
                                         }
@@ -3172,7 +2763,7 @@ export const recipe = {
                                 "priorStepSupplierItems": null,
                                 "supplierItem": {
                                     "id": "LLKU2FYulX",
-                                    "index": "a65c484d-38ce-4e21-a532-240dccd21f20",
+                                    "index": "8fdd65c2-6800-4d1f-82d4-9e6a7158ad7a",
                                     "name": "tamari",
                                     "pricePerKg": 6.6,
                                     "cookingModes": [
@@ -3302,28 +2893,17 @@ export const recipe = {
                                     "transformationModes": [
                                         {
                                             "transformationMode": {
-                                                "name": "Sauté",
-                                                "transformationType": "COOKING",
-                                                "createdAt": "2022-10-14T14:42:58.037Z",
-                                                "updatedAt": "2022-10-14T14:42:58.037Z",
-                                                "useInRecipeCount": 1,
-                                                "objectId": "GEzjFqccMt",
-                                                "__type": "Object",
-                                                "className": "TransformationModes"
+                                                "__type": "Pointer",
+                                                "className": "TransformationModes",
+                                                "objectId": "GEzjFqccMt"
                                             },
                                             "transformationRate": 50
                                         },
                                         {
                                             "transformationMode": {
-                                                "name": "Retrait",
-                                                "transformationType": "MIXED",
-                                                "createdAt": "2024-12-28T14:29:44.488Z",
-                                                "updatedAt": "2025-02-05T13:45:41.190Z",
-                                                "useInRecipeCount": 1,
-                                                "useInReusableStepCount": 1,
-                                                "objectId": "5565b8TltD",
-                                                "__type": "Object",
-                                                "className": "TransformationModes"
+                                                "__type": "Pointer",
+                                                "className": "TransformationModes",
+                                                "objectId": "5565b8TltD"
                                             },
                                             "transformationRate": 0.00001
                                         }
@@ -3380,7 +2960,7 @@ export const recipe = {
                                 "priorStepSupplierItems": null,
                                 "supplierItem": {
                                     "id": "SRSHmuoGVu",
-                                    "index": "b5576825-0bf1-4c78-84f5-b1e6d46480f7",
+                                    "index": "3cfb80af-6e22-4c42-954b-c87a2dac1604",
                                     "name": "sucre semoule",
                                     "pricePerKg": 0.61,
                                     "cookingModes": [
@@ -3580,7 +3160,7 @@ export const recipe = {
         },
         {
             "id": "UB9wG3Z4v1",
-            "index": "44b78549-253d-4a5d-b935-009a44117345",
+            "index": "f39669ec-425e-4ee8-9064-dd336594c39b",
             "name": "Nouilles de riz + 1/3 de la sauce",
             "generic": false,
             "print": true,
@@ -3588,7 +3168,7 @@ export const recipe = {
             "steps": [
                 {
                     "name": "",
-                    "index": "4c037b0a-7b2b-41ac-961f-8736c73a479e",
+                    "index": "46106c28-d7e1-48dc-b284-c07f80bbc30d",
                     "description": "NE PAS SALER. Cuire les nouilles à l'eau bouillante salée. Huiler. Assaisonner avec 1/3 de la sauce soja-piment.",
                     "ingredients": [
                         {
@@ -3599,7 +3179,7 @@ export const recipe = {
                             "priorStepSupplierItems": null,
                             "supplierItem": {
                                 "id": "pXFjkkEnhQ",
-                                "index": "e185142d-4172-4741-8710-18baf51f11b6",
+                                "index": "c7961199-f54c-4b66-8c5f-98807ebb6746",
                                 "name": "vermicelle de riz larges 5mm",
                                 "pricePerKg": 3.7,
                                 "cookingModes": [
@@ -3680,7 +3260,7 @@ export const recipe = {
                             "priorStepSupplierItems": null,
                             "supplierItem": {
                                 "id": "fEsD0a7jIu",
-                                "index": "cc2f66ce-a340-4908-83e0-571972792877",
+                                "index": "6ff2f312-7e00-4423-913f-fe7d93c74da9",
                                 "name": "huile de sésame",
                                 "pricePerKg": 9.08,
                                 "cookingModes": [
@@ -3780,7 +3360,7 @@ export const recipe = {
                                 "priorStepSupplierItems": null,
                                 "supplierItem": {
                                     "id": "pXFjkkEnhQ",
-                                    "index": "df6030a9-0d7f-48b7-a1db-15c53ff9a4db",
+                                    "index": "f78a163f-ef32-46f9-a38b-f90cb458fe51",
                                     "name": "vermicelle de riz larges 5mm",
                                     "pricePerKg": 3.7,
                                     "cookingModes": [
@@ -3966,7 +3546,7 @@ export const recipe = {
         },
         {
             "id": "Lx0nuMIt3M",
-            "index": "a149d0ac-0ac5-4a77-a19d-ae16a7e8b5da",
+            "index": "4c31dbdb-c48f-477f-9904-4ad9d22ae0ed",
             "name": "Finitions",
             "generic": false,
             "print": true,
@@ -3974,7 +3554,7 @@ export const recipe = {
             "steps": [
                 {
                     "name": "",
-                    "index": "746c3d42-afce-4b76-8f4e-4c8423738f22",
+                    "index": "947aeef4-336d-4b1d-bc62-adfc31aafbc7",
                     "description": "Ciseler la coriandre. Mélanger coriandre et sésame. ",
                     "ingredients": [
                         {
@@ -3985,7 +3565,7 @@ export const recipe = {
                             "priorStepSupplierItems": null,
                             "supplierItem": {
                                 "id": "59uhvzW188",
-                                "index": "ca99f16b-d793-43f8-918f-81aea8ffe43d",
+                                "index": "d4eeb562-0c26-4d48-8a5f-b1a6d06fc57b",
                                 "name": "x-coriandre",
                                 "pricePerKg": 7.428571428571428,
                                 "cookingModes": [
@@ -4065,7 +3645,7 @@ export const recipe = {
                             "priorStepSupplierItems": null,
                             "supplierItem": {
                                 "id": "R0DPkvwsid",
-                                "index": "7efd8a08-d6a9-4422-a94d-33716a58f516",
+                                "index": "953a8570-21d5-4191-980e-3025b7a7fab9",
                                 "name": "sesame blond complet",
                                 "pricePerKg": 4.8,
                                 "cookingModes": [
@@ -4153,7 +3733,7 @@ export const recipe = {
                     "step": {
                         "objectId": "RsE0diUCGk",
                         "name": "Coriandre émincée",
-                        "index": "6b16832b-f129-4a72-92a8-15ff44ed3f6b",
+                        "index": "84fb315d-cfa0-4ee7-a440-95d9ed703d70",
                         "isReusable": true,
                         "error": false,
                         "productionSteps": [
@@ -4171,7 +3751,7 @@ export const recipe = {
                                         "priorStepSupplierItems": null,
                                         "supplierItem": {
                                             "id": "59uhvzW188",
-                                            "index": "791d5e4c-ee8a-4842-8a04-89c26b274a44",
+                                            "index": "b61500d8-a5b8-40d1-ae7e-aee576866e35",
                                             "name": "x-coriandre",
                                             "pricePerKg": 7.428571428571428,
                                             "cookingModes": [
@@ -4235,7 +3815,7 @@ export const recipe = {
                                             "commercialName": {
                                                 "name": "coriandre",
                                                 "createdAt": "2019-01-17T17:18:06.736Z",
-                                                "updatedAt": "2025-04-07T10:28:35.518Z",
+                                                "updatedAt": "2025-06-02T15:48:40.264Z",
                                                 "group": {
                                                     "name": "herbes aromatiques",
                                                     "family": {
@@ -4271,9 +3851,9 @@ export const recipe = {
                                                     "11",
                                                     "12"
                                                 ],
-                                                "recipeQuantity": 284,
+                                                "recipeQuantity": 287,
                                                 "complexity": 5,
-                                                "exportEtiquettable": 1744021715501,
+                                                "exportEtiquettable": 1748879320238,
                                                 "secondOrigin": 6,
                                                 "objectId": "INWbPqmDQD",
                                                 "__type": "Object",
@@ -4288,8 +3868,7 @@ export const recipe = {
                                                         "name": "Emincé",
                                                         "transformationType": "CUTTING",
                                                         "createdAt": "2022-10-14T14:42:38.405Z",
-                                                        "updatedAt": "2022-10-14T14:42:38.405Z",
-                                                        "useInRecipeCount": 7,
+                                                        "updatedAt": "2025-02-18T16:01:44.862Z",
                                                         "objectId": "sdV2GjyweH",
                                                         "__type": "Object",
                                                         "className": "TransformationModes"
@@ -4303,7 +3882,7 @@ export const recipe = {
                                                         "name": "Avec lame",
                                                         "transformationType": "CUTTING",
                                                         "createdAt": "2024-04-11T15:15:52.126Z",
-                                                        "updatedAt": "2024-04-11T15:15:52.126Z",
+                                                        "updatedAt": "2025-02-17T16:40:15.988Z",
                                                         "objectId": "G5uCT9znzY",
                                                         "__type": "Object",
                                                         "className": "TransformationModes"
@@ -4413,8 +3992,7 @@ export const recipe = {
                                                                     "name": "Emincé",
                                                                     "transformationType": "CUTTING",
                                                                     "createdAt": "2022-10-14T14:42:38.405Z",
-                                                                    "updatedAt": "2022-10-14T14:42:38.405Z",
-                                                                    "useInRecipeCount": 7,
+                                                                    "updatedAt": "2025-02-18T16:01:44.862Z",
                                                                     "objectId": "sdV2GjyweH",
                                                                     "__type": "Object",
                                                                     "className": "TransformationModes"
@@ -4428,7 +4006,7 @@ export const recipe = {
                                                                     "name": "Avec lame",
                                                                     "transformationType": "CUTTING",
                                                                     "createdAt": "2024-04-11T15:15:52.126Z",
-                                                                    "updatedAt": "2024-04-11T15:15:52.126Z",
+                                                                    "updatedAt": "2025-02-17T16:40:15.988Z",
                                                                     "objectId": "G5uCT9znzY",
                                                                     "__type": "Object",
                                                                     "className": "TransformationModes"
@@ -4579,235 +4157,16 @@ export const recipe = {
                                                     "orderUnitWeight": "kg",
                                                     "storageArea": "CF Fruits & Légumes",
                                                     "supplier": {
-                                                        "informations": {
-                                                            "corporateName": "AFL",
-                                                            "countryCode": "FR",
-                                                            "continentCode": "EU",
-                                                            "sanitaryApprovalNumber": "1",
-                                                            "siret": 1,
-                                                            "intraTVA": 1,
-                                                            "referenceStartDate": 1641859200000,
-                                                            "referenceEndDate": 1641859200000,
-                                                            "defaultDeliverySite": {
-                                                                "createdAt": "2021-10-22T09:26:37.327Z",
-                                                                "updatedAt": "2023-08-17T14:55:28.628Z",
-                                                                "kitchenAreas": [
-                                                                    {
-                                                                        "kitchenArea": {
-                                                                            "name": "Légumerie",
-                                                                            "createdAt": "2022-10-03T13:28:13.048Z",
-                                                                            "updatedAt": "2022-10-06T13:56:49.815Z",
-                                                                            "objectId": "muRmEs79Dk",
-                                                                            "__type": "Object",
-                                                                            "className": "KitchenArea"
-                                                                        },
-                                                                        "order": 1,
-                                                                        "machinesCount": 3
-                                                                    },
-                                                                    {
-                                                                        "kitchenArea": {
-                                                                            "name": "Déconditionnement",
-                                                                            "createdAt": "2023-02-21T14:47:27.491Z",
-                                                                            "updatedAt": "2023-02-21T14:47:27.491Z",
-                                                                            "objectId": "48AIvqmOq4",
-                                                                            "__type": "Object",
-                                                                            "className": "KitchenArea"
-                                                                        },
-                                                                        "order": 2
-                                                                    },
-                                                                    {
-                                                                        "kitchenArea": {
-                                                                            "name": "Découpe viande",
-                                                                            "createdAt": "2023-08-17T14:53:52.191Z",
-                                                                            "updatedAt": "2023-08-17T14:53:52.191Z",
-                                                                            "objectId": "0zjDqU8S1t",
-                                                                            "__type": "Object",
-                                                                            "className": "KitchenArea"
-                                                                        },
-                                                                        "order": 3
-                                                                    },
-                                                                    {
-                                                                        "kitchenArea": {
-                                                                            "name": "Prépa froide",
-                                                                            "createdAt": "2022-10-03T13:28:13.281Z",
-                                                                            "updatedAt": "2022-11-07T10:29:10.708Z",
-                                                                            "objectId": "ZYbxuJSDYI",
-                                                                            "__type": "Object",
-                                                                            "className": "KitchenArea"
-                                                                        },
-                                                                        "order": 4,
-                                                                        "machinesCount": 2
-                                                                    },
-                                                                    {
-                                                                        "kitchenArea": {
-                                                                            "name": "Prépa chaude",
-                                                                            "createdAt": "2022-10-03T13:28:13.742Z",
-                                                                            "updatedAt": "2022-10-03T13:28:13.742Z",
-                                                                            "objectId": "5TwsE45cjw",
-                                                                            "__type": "Object",
-                                                                            "className": "KitchenArea"
-                                                                        },
-                                                                        "order": 5,
-                                                                        "machinesCount": 0
-                                                                    }
-                                                                ],
-                                                                "name": "Sucy",
-                                                                "deliveryAddress": {
-                                                                    "line1": "Zone Industrielle des Marais, 7 Rue de la Scierie",
-                                                                    "line2": "",
-                                                                    "codeAccess": "",
-                                                                    "zipCode": "94370",
-                                                                    "city": "Sucy-en-Brie",
-                                                                    "country": "France"
-                                                                },
-                                                                "invoiceAddress": {
-                                                                    "line1": "110 Avenue de la République",
-                                                                    "line2": "",
-                                                                    "codeAccess": "",
-                                                                    "zipCode": "75011",
-                                                                    "city": "Paris",
-                                                                    "country": "France"
-                                                                },
-                                                                "stockZones": [
-                                                                    {
-                                                                        "name": "BOF",
-                                                                        "spot": "Chambre froide",
-                                                                        "temperature": "-4",
-                                                                        "storeNumber": "1000",
-                                                                        "comments": "-",
-                                                                        "createdAt": "2021-10-22T09:27:11.902Z",
-                                                                        "updatedAt": "2022-07-12T10:08:00.998Z",
-                                                                        "_objCount": 105069,
-                                                                        "id": "PxgIX16Aej",
-                                                                        "objectId": "PxgIX16Aej",
-                                                                        "__type": "Object",
-                                                                        "className": "StockZone"
-                                                                    },
-                                                                    {
-                                                                        "name": "Économat",
-                                                                        "spot": "Hohoho",
-                                                                        "temperature": "1000",
-                                                                        "storeNumber": "10000",
-                                                                        "comments": "-",
-                                                                        "createdAt": "2021-10-22T09:30:03.563Z",
-                                                                        "updatedAt": "2022-02-22T10:22:11.434Z",
-                                                                        "objectId": "oWe5OPUjt7",
-                                                                        "__type": "Object",
-                                                                        "className": "StockZone"
-                                                                    },
-                                                                    {
-                                                                        "name": "Palette Épicerie",
-                                                                        "spot": "Sucy 3",
-                                                                        "temperature": "0",
-                                                                        "storeNumber": "1",
-                                                                        "comments": "-",
-                                                                        "createdAt": "2021-10-22T09:31:03.563Z",
-                                                                        "updatedAt": "2022-02-22T10:22:28.738Z",
-                                                                        "objectId": "ewmEK71A7N",
-                                                                        "__type": "Object",
-                                                                        "className": "StockZone"
-                                                                    },
-                                                                    {
-                                                                        "name": "Stockage packaging",
-                                                                        "spot": "fjeaiofew",
-                                                                        "temperature": "12",
-                                                                        "storeNumber": "9213",
-                                                                        "comments": "-",
-                                                                        "createdAt": "2022-07-13T09:25:10.974Z",
-                                                                        "updatedAt": "2022-07-13T09:25:10.974Z",
-                                                                        "objectId": "7AllHgWVJm",
-                                                                        "__type": "Object",
-                                                                        "className": "StockZone"
-                                                                    },
-                                                                    {
-                                                                        "name": "CF Fruits et Légumes",
-                                                                        "spot": "Sucy 5",
-                                                                        "temperature": "213211",
-                                                                        "storeNumber": "32132",
-                                                                        "comments": "-",
-                                                                        "createdAt": "2023-02-21T14:47:40.906Z",
-                                                                        "updatedAt": "2023-02-21T14:47:40.906Z",
-                                                                        "objectId": "X29XFI2GUx",
-                                                                        "__type": "Object",
-                                                                        "className": "StockZone"
-                                                                    }
-                                                                ],
-                                                                "type": "",
-                                                                "image": null,
-                                                                "news": "Hello Sucy",
-                                                                "packagingLines": [
-                                                                    {
-                                                                        "name": "Ligne barquettage operculé",
-                                                                        "createdAt": "2024-03-08T16:23:01.535Z",
-                                                                        "updatedAt": "2024-03-08T16:23:01.535Z",
-                                                                        "objectId": "a04ToQQOcY",
-                                                                        "__type": "Object",
-                                                                        "className": "PackagingLine"
-                                                                    },
-                                                                    {
-                                                                        "name": "Ligne de barquettage 02",
-                                                                        "createdAt": "2024-03-08T09:20:31.361Z",
-                                                                        "updatedAt": "2024-03-08T09:20:31.361Z",
-                                                                        "objectId": "gaDWW6yIqg",
-                                                                        "__type": "Object",
-                                                                        "className": "PackagingLine"
-                                                                    },
-                                                                    {
-                                                                        "name": "Packaging line 01",
-                                                                        "createdAt": "2024-03-08T09:20:11.147Z",
-                                                                        "updatedAt": "2024-03-08T09:20:11.147Z",
-                                                                        "objectId": "k3IA0GrGYV",
-                                                                        "__type": "Object",
-                                                                        "className": "PackagingLine"
-                                                                    }
-                                                                ],
-                                                                "objectId": "UPK3lbT78C",
-                                                                "__type": "Object",
-                                                                "className": "Site"
-                                                            },
-                                                            "clientReference": "FoodChéri"
-                                                        },
-                                                        "name": "AFL",
-                                                        "createdAt": "2022-01-10T11:43:37.163Z",
-                                                        "updatedAt": "2022-04-26T09:53:18.482Z",
-                                                        "canExportEtiquettable": false,
-                                                        "isActive": false,
-                                                        "order": {
-                                                            "minimumCommand": 0,
-                                                            "minimumCommandUnit": "€",
-                                                            "sendOrderMode": {
-                                                                "manually": false,
-                                                                "email": false,
-                                                                "fax": false
-                                                            },
-                                                            "openDays": "OPEN_DAYS",
-                                                            "deliveryDays": [
-                                                                1,
-                                                                2,
-                                                                3,
-                                                                5,
-                                                                7
-                                                            ],
-                                                            "forbidMinimumCommand": false,
-                                                            "showLinkInEmail": false,
-                                                            "shippingFees": 0,
-                                                            "allowShippingFeesCancel": false,
-                                                            "allowEarlyDelivery": false,
-                                                            "deliveryLeadTime": 8,
-                                                            "orderHourLimit": "14:45"
-                                                        },
-                                                        "_objCount": 82228,
-                                                        "id": "JskJmqrSjK",
-                                                        "objectId": "JskJmqrSjK",
-                                                        "__type": "Object",
-                                                        "className": "Suppliers"
+                                                        "__type": "Pointer",
+                                                        "className": "Suppliers",
+                                                        "objectId": "JskJmqrSjK"
                                                     },
                                                     "createdAt": "2022-01-10T11:44:43.826Z",
                                                     "updatedAt": "2025-06-02T15:48:33.441Z",
                                                     "commercialName": {
                                                         "name": "coriandre",
                                                         "createdAt": "2019-01-17T17:18:06.736Z",
-                                                        "updatedAt": "2025-04-07T10:28:35.518Z",
+                                                        "updatedAt": "2025-06-02T15:48:40.264Z",
                                                         "group": {
                                                             "name": "herbes aromatiques",
                                                             "family": {
@@ -4843,9 +4202,9 @@ export const recipe = {
                                                             "11",
                                                             "12"
                                                         ],
-                                                        "recipeQuantity": 284,
+                                                        "recipeQuantity": 287,
                                                         "complexity": 5,
-                                                        "exportEtiquettable": 1744021715501,
+                                                        "exportEtiquettable": 1748879320238,
                                                         "secondOrigin": 6,
                                                         "objectId": "INWbPqmDQD",
                                                         "__type": "Object",
@@ -4890,193 +4249,14 @@ export const recipe = {
                                                     },
                                                     "supplierArticleName": "CORIANDRE FR VRAC",
                                                     "site": {
-                                                        "createdAt": "2021-10-22T09:26:37.327Z",
-                                                        "updatedAt": "2023-08-17T14:55:28.628Z",
-                                                        "kitchenAreas": [
-                                                            {
-                                                                "kitchenArea": {
-                                                                    "name": "Légumerie",
-                                                                    "createdAt": "2022-10-03T13:28:13.048Z",
-                                                                    "updatedAt": "2022-10-06T13:56:49.815Z",
-                                                                    "objectId": "muRmEs79Dk",
-                                                                    "__type": "Object",
-                                                                    "className": "KitchenArea"
-                                                                },
-                                                                "order": 1,
-                                                                "machinesCount": 3
-                                                            },
-                                                            {
-                                                                "kitchenArea": {
-                                                                    "name": "Déconditionnement",
-                                                                    "createdAt": "2023-02-21T14:47:27.491Z",
-                                                                    "updatedAt": "2023-02-21T14:47:27.491Z",
-                                                                    "objectId": "48AIvqmOq4",
-                                                                    "__type": "Object",
-                                                                    "className": "KitchenArea"
-                                                                },
-                                                                "order": 2
-                                                            },
-                                                            {
-                                                                "kitchenArea": {
-                                                                    "name": "Découpe viande",
-                                                                    "createdAt": "2023-08-17T14:53:52.191Z",
-                                                                    "updatedAt": "2023-08-17T14:53:52.191Z",
-                                                                    "objectId": "0zjDqU8S1t",
-                                                                    "__type": "Object",
-                                                                    "className": "KitchenArea"
-                                                                },
-                                                                "order": 3
-                                                            },
-                                                            {
-                                                                "kitchenArea": {
-                                                                    "name": "Prépa froide",
-                                                                    "createdAt": "2022-10-03T13:28:13.281Z",
-                                                                    "updatedAt": "2022-11-07T10:29:10.708Z",
-                                                                    "objectId": "ZYbxuJSDYI",
-                                                                    "__type": "Object",
-                                                                    "className": "KitchenArea"
-                                                                },
-                                                                "order": 4,
-                                                                "machinesCount": 2
-                                                            },
-                                                            {
-                                                                "kitchenArea": {
-                                                                    "name": "Prépa chaude",
-                                                                    "createdAt": "2022-10-03T13:28:13.742Z",
-                                                                    "updatedAt": "2022-10-03T13:28:13.742Z",
-                                                                    "objectId": "5TwsE45cjw",
-                                                                    "__type": "Object",
-                                                                    "className": "KitchenArea"
-                                                                },
-                                                                "order": 5,
-                                                                "machinesCount": 0
-                                                            }
-                                                        ],
-                                                        "name": "Sucy",
-                                                        "deliveryAddress": {
-                                                            "line1": "Zone Industrielle des Marais, 7 Rue de la Scierie",
-                                                            "line2": "",
-                                                            "codeAccess": "",
-                                                            "zipCode": "94370",
-                                                            "city": "Sucy-en-Brie",
-                                                            "country": "France"
-                                                        },
-                                                        "invoiceAddress": {
-                                                            "line1": "110 Avenue de la République",
-                                                            "line2": "",
-                                                            "codeAccess": "",
-                                                            "zipCode": "75011",
-                                                            "city": "Paris",
-                                                            "country": "France"
-                                                        },
-                                                        "stockZones": [
-                                                            {
-                                                                "name": "BOF",
-                                                                "spot": "Chambre froide",
-                                                                "temperature": "-4",
-                                                                "storeNumber": "1000",
-                                                                "comments": "-",
-                                                                "createdAt": "2021-10-22T09:27:11.902Z",
-                                                                "updatedAt": "2022-07-12T10:08:00.998Z",
-                                                                "_objCount": 105069,
-                                                                "id": "PxgIX16Aej",
-                                                                "objectId": "PxgIX16Aej",
-                                                                "__type": "Object",
-                                                                "className": "StockZone"
-                                                            },
-                                                            {
-                                                                "name": "Économat",
-                                                                "spot": "Hohoho",
-                                                                "temperature": "1000",
-                                                                "storeNumber": "10000",
-                                                                "comments": "-",
-                                                                "createdAt": "2021-10-22T09:30:03.563Z",
-                                                                "updatedAt": "2022-02-22T10:22:11.434Z",
-                                                                "objectId": "oWe5OPUjt7",
-                                                                "__type": "Object",
-                                                                "className": "StockZone"
-                                                            },
-                                                            {
-                                                                "name": "Palette Épicerie",
-                                                                "spot": "Sucy 3",
-                                                                "temperature": "0",
-                                                                "storeNumber": "1",
-                                                                "comments": "-",
-                                                                "createdAt": "2021-10-22T09:31:03.563Z",
-                                                                "updatedAt": "2022-02-22T10:22:28.738Z",
-                                                                "objectId": "ewmEK71A7N",
-                                                                "__type": "Object",
-                                                                "className": "StockZone"
-                                                            },
-                                                            {
-                                                                "name": "Stockage packaging",
-                                                                "spot": "fjeaiofew",
-                                                                "temperature": "12",
-                                                                "storeNumber": "9213",
-                                                                "comments": "-",
-                                                                "createdAt": "2022-07-13T09:25:10.974Z",
-                                                                "updatedAt": "2022-07-13T09:25:10.974Z",
-                                                                "objectId": "7AllHgWVJm",
-                                                                "__type": "Object",
-                                                                "className": "StockZone"
-                                                            },
-                                                            {
-                                                                "name": "CF Fruits et Légumes",
-                                                                "spot": "Sucy 5",
-                                                                "temperature": "213211",
-                                                                "storeNumber": "32132",
-                                                                "comments": "-",
-                                                                "createdAt": "2023-02-21T14:47:40.906Z",
-                                                                "updatedAt": "2023-02-21T14:47:40.906Z",
-                                                                "objectId": "X29XFI2GUx",
-                                                                "__type": "Object",
-                                                                "className": "StockZone"
-                                                            }
-                                                        ],
-                                                        "type": "",
-                                                        "image": null,
-                                                        "news": "Hello Sucy",
-                                                        "packagingLines": [
-                                                            {
-                                                                "name": "Ligne barquettage operculé",
-                                                                "createdAt": "2024-03-08T16:23:01.535Z",
-                                                                "updatedAt": "2024-03-08T16:23:01.535Z",
-                                                                "objectId": "a04ToQQOcY",
-                                                                "__type": "Object",
-                                                                "className": "PackagingLine"
-                                                            },
-                                                            {
-                                                                "name": "Ligne de barquettage 02",
-                                                                "createdAt": "2024-03-08T09:20:31.361Z",
-                                                                "updatedAt": "2024-03-08T09:20:31.361Z",
-                                                                "objectId": "gaDWW6yIqg",
-                                                                "__type": "Object",
-                                                                "className": "PackagingLine"
-                                                            },
-                                                            {
-                                                                "name": "Packaging line 01",
-                                                                "createdAt": "2024-03-08T09:20:11.147Z",
-                                                                "updatedAt": "2024-03-08T09:20:11.147Z",
-                                                                "objectId": "k3IA0GrGYV",
-                                                                "__type": "Object",
-                                                                "className": "PackagingLine"
-                                                            }
-                                                        ],
-                                                        "objectId": "UPK3lbT78C",
-                                                        "__type": "Object",
-                                                        "className": "Site"
+                                                        "__type": "Pointer",
+                                                        "className": "Site",
+                                                        "objectId": "UPK3lbT78C"
                                                     },
                                                     "stockZone": {
-                                                        "name": "Économat",
-                                                        "spot": "Hohoho",
-                                                        "temperature": "1000",
-                                                        "storeNumber": "10000",
-                                                        "comments": "-",
-                                                        "createdAt": "2021-10-22T09:30:03.563Z",
-                                                        "updatedAt": "2022-02-22T10:22:11.434Z",
-                                                        "objectId": "oWe5OPUjt7",
-                                                        "__type": "Object",
-                                                        "className": "StockZone"
+                                                        "__type": "Pointer",
+                                                        "className": "StockZone",
+                                                        "objectId": "oWe5OPUjt7"
                                                     },
                                                     "isActive": true,
                                                     "useOnRecipe": true,
@@ -5088,8 +4268,7 @@ export const recipe = {
                                                                 "name": "Emincé",
                                                                 "transformationType": "CUTTING",
                                                                 "createdAt": "2022-10-14T14:42:38.405Z",
-                                                                "updatedAt": "2022-10-14T14:42:38.405Z",
-                                                                "useInRecipeCount": 7,
+                                                                "updatedAt": "2025-02-18T16:01:44.862Z",
                                                                 "objectId": "sdV2GjyweH",
                                                                 "__type": "Object",
                                                                 "className": "TransformationModes"
@@ -5103,7 +4282,7 @@ export const recipe = {
                                                                 "name": "Avec lame",
                                                                 "transformationType": "CUTTING",
                                                                 "createdAt": "2024-04-11T15:15:52.126Z",
-                                                                "updatedAt": "2024-04-11T15:15:52.126Z",
+                                                                "updatedAt": "2025-02-17T16:40:15.988Z",
                                                                 "objectId": "G5uCT9znzY",
                                                                 "__type": "Object",
                                                                 "className": "TransformationModes"
@@ -5125,8 +4304,7 @@ export const recipe = {
                                                     "name": "Emincé",
                                                     "transformationType": "CUTTING",
                                                     "createdAt": "2022-10-14T14:42:38.405Z",
-                                                    "updatedAt": "2022-10-14T14:42:38.405Z",
-                                                    "useInRecipeCount": 7,
+                                                    "updatedAt": "2025-02-18T16:01:44.862Z",
                                                     "objectId": "sdV2GjyweH",
                                                     "__type": "Object",
                                                     "className": "TransformationModes"
@@ -5185,7 +4363,7 @@ export const recipe = {
         },
         {
             "id": "xLFqFLTVXL",
-            "index": "28b12acf-08cb-4196-9663-e6898a0d2827",
+            "index": "526cf3dc-b4e4-46ee-81e7-9c901b0c7724",
             "name": "Légumes + 1/3 de la sauce",
             "generic": false,
             "print": true,
@@ -5193,7 +4371,7 @@ export const recipe = {
             "steps": [
                 {
                     "name": "",
-                    "index": "741f57e1-db2b-4a43-a53f-69dbd28ed05d",
+                    "index": "0f660213-78e5-410f-a30a-4df6f0356829",
                     "description": "NE PAS SALER. Egoutter les poivrons. Râper les carottes grosse grille. Faire revenir quelques minutes dans 1/3 de la sauce soja-piment.",
                     "ingredients": [
                         {
@@ -5204,7 +4382,7 @@ export const recipe = {
                             "priorStepSupplierItems": null,
                             "supplierItem": {
                                 "id": "EoQLJvRCWz",
-                                "index": "182d8c93-531b-4e2b-be05-be707f4ef715",
+                                "index": "5fc3bd57-657a-40a2-8dca-a7f69cf707c0",
                                 "name": "poivron rouge laniere surg.",
                                 "pricePerKg": 2.05,
                                 "cookingModes": [
@@ -5285,7 +4463,7 @@ export const recipe = {
                             "priorStepSupplierItems": null,
                             "supplierItem": {
                                 "id": "2D1DwnkC7v",
-                                "index": "fcb42fda-6f89-491e-a240-48c288168faf",
+                                "index": "b06a8720-959c-4163-adc5-d050f84dfd0e",
                                 "name": "carotte",
                                 "pricePerKg": 1.37,
                                 "cookingModes": [
@@ -5369,7 +4547,7 @@ export const recipe = {
                     "step": {
                         "objectId": "j5R3mocf88",
                         "name": "CAROTTES CUITES",
-                        "index": "8ade7deb-f63a-429b-8865-d73f76160b63",
+                        "index": "90d57a4b-c78e-4cfd-ba50-b73829a8c0b2",
                         "isReusable": true,
                         "error": false,
                         "productionSteps": [
@@ -5387,7 +4565,7 @@ export const recipe = {
                                         "priorStepSupplierItems": null,
                                         "supplierItem": {
                                             "id": "j82XmPEN4s",
-                                            "index": "48d905d0-e4d8-4ff9-814c-dbe9c12a9ac8",
+                                            "index": "6f6a6423-f634-4a01-8bb6-af7f83fa9933",
                                             "name": "x-carottes nom modifié",
                                             "pricePerKg": 1,
                                             "cookingModes": [
@@ -5451,31 +4629,18 @@ export const recipe = {
                                             "commercialName": {
                                                 "name": "carotte bio",
                                                 "createdAt": "2019-01-17T17:18:06.693Z",
-                                                "updatedAt": "2024-04-18T14:25:05.926Z",
+                                                "updatedAt": "2025-06-02T15:48:39.135Z",
                                                 "group": {
-                                                    "family": {
-                                                        "name": "légumes & herbes",
-                                                        "createdAt": "2019-03-04T13:36:51.372Z",
-                                                        "updatedAt": "2020-04-14T07:49:00.493Z",
-                                                        "objectId": "I1sA6aCCKS",
-                                                        "__type": "Object",
-                                                        "className": "FamiliesIngredients"
-                                                    },
-                                                    "name": "autres légumes",
-                                                    "createdAt": "2020-04-14T07:52:21.426Z",
-                                                    "updatedAt": "2020-04-17T18:08:29.360Z",
-                                                    "_objCount": 32057,
-                                                    "id": "a8Q2DwtAtk",
-                                                    "objectId": "a8Q2DwtAtk",
-                                                    "__type": "Object",
-                                                    "className": "GroupsIngredients"
+                                                    "__type": "Pointer",
+                                                    "className": "GroupsIngredients",
+                                                    "objectId": "a8Q2DwtAtk"
                                                 },
-                                                "conservationMode": 1,
+                                                "conservationMode": 3,
                                                 "firstOrigin": 4,
                                                 "firstOriginAverage": 78,
                                                 "secondOrigin": 5,
                                                 "secondOriginAverage": 22,
-                                                "label": 1,
+                                                "label": 17,
                                                 "season": [
                                                     "1",
                                                     "2",
@@ -5490,9 +4655,9 @@ export const recipe = {
                                                     "11",
                                                     "12"
                                                 ],
-                                                "recipeQuantity": 647,
+                                                "recipeQuantity": 720,
                                                 "complexity": 1,
-                                                "exportEtiquettable": 1713450305898,
+                                                "exportEtiquettable": 1748879319114,
                                                 "objectId": "FVFUXBg0If",
                                                 "__type": "Object",
                                                 "className": "CommercialName"
@@ -5503,27 +4668,17 @@ export const recipe = {
                                             "transformationModes": [
                                                 {
                                                     "transformationMode": {
-                                                        "name": "En cubes",
-                                                        "transformationType": "CUTTING",
-                                                        "createdAt": "2022-10-21T10:34:53.209Z",
-                                                        "updatedAt": "2022-10-21T10:34:53.209Z",
-                                                        "useInRecipeCount": 2,
-                                                        "objectId": "6ceRxHKgA0",
-                                                        "__type": "Object",
-                                                        "className": "TransformationModes"
+                                                        "__type": "Pointer",
+                                                        "className": "TransformationModes",
+                                                        "objectId": "6ceRxHKgA0"
                                                     },
                                                     "transformationRate": 60
                                                 },
                                                 {
                                                     "transformationMode": {
-                                                        "name": "Sauté",
-                                                        "transformationType": "COOKING",
-                                                        "createdAt": "2022-10-14T14:42:58.037Z",
-                                                        "updatedAt": "2022-10-14T14:42:58.037Z",
-                                                        "useInRecipeCount": 1,
-                                                        "objectId": "GEzjFqccMt",
-                                                        "__type": "Object",
-                                                        "className": "TransformationModes"
+                                                        "__type": "Pointer",
+                                                        "className": "TransformationModes",
+                                                        "objectId": "GEzjFqccMt"
                                                     },
                                                     "transformationRate": 60,
                                                     "useInRecipeCount": 2,
@@ -5531,14 +4686,9 @@ export const recipe = {
                                                 },
                                                 {
                                                     "transformationMode": {
-                                                        "name": "Vapeur",
-                                                        "transformationType": "COOKING",
-                                                        "createdAt": "2022-10-21T10:35:05.216Z",
-                                                        "updatedAt": "2022-10-21T10:35:05.216Z",
-                                                        "useInRecipeCount": 7,
-                                                        "objectId": "8njIFYzOUa",
-                                                        "__type": "Object",
-                                                        "className": "TransformationModes"
+                                                        "__type": "Pointer",
+                                                        "className": "TransformationModes",
+                                                        "objectId": "8njIFYzOUa"
                                                     },
                                                     "transformationRate": 55,
                                                     "useInRecipeCount": 1,
@@ -5546,27 +4696,17 @@ export const recipe = {
                                                 },
                                                 {
                                                     "transformationMode": {
-                                                        "name": "Grattiné",
-                                                        "transformationType": "COOKING",
-                                                        "createdAt": "2022-10-21T10:37:41.650Z",
-                                                        "updatedAt": "2022-10-21T10:37:41.650Z",
-                                                        "useInRecipeCount": 1,
-                                                        "objectId": "Z2jQN7f1gj",
-                                                        "__type": "Object",
-                                                        "className": "TransformationModes"
+                                                        "__type": "Pointer",
+                                                        "className": "TransformationModes",
+                                                        "objectId": "Z2jQN7f1gj"
                                                     },
                                                     "transformationRate": 83
                                                 },
                                                 {
                                                     "transformationMode": {
-                                                        "name": "En dés",
-                                                        "transformationType": "CUTTING",
-                                                        "createdAt": "2024-12-30T13:29:13.120Z",
-                                                        "updatedAt": "2024-12-30T13:29:13.120Z",
-                                                        "useInRecipeCount": 1,
-                                                        "objectId": "96iO3jOaSS",
-                                                        "__type": "Object",
-                                                        "className": "TransformationModes"
+                                                        "__type": "Pointer",
+                                                        "className": "TransformationModes",
+                                                        "objectId": "96iO3jOaSS"
                                                     },
                                                     "transformationRate": 90,
                                                     "useInRecipeCount": 2,
@@ -5577,8 +4717,7 @@ export const recipe = {
                                                         "name": "Emincé",
                                                         "transformationType": "CUTTING",
                                                         "createdAt": "2022-10-14T14:42:38.405Z",
-                                                        "updatedAt": "2022-10-14T14:42:38.405Z",
-                                                        "useInRecipeCount": 7,
+                                                        "updatedAt": "2025-02-18T16:01:44.862Z",
                                                         "objectId": "sdV2GjyweH",
                                                         "__type": "Object",
                                                         "className": "TransformationModes"
@@ -5587,39 +4726,26 @@ export const recipe = {
                                                 },
                                                 {
                                                     "transformationMode": {
-                                                        "name": "A l'eau",
-                                                        "transformationType": "COOKING",
-                                                        "createdAt": "2022-10-21T10:38:14.657Z",
-                                                        "updatedAt": "2022-10-21T10:38:14.657Z",
-                                                        "useInRecipeCount": 4,
-                                                        "objectId": "jjdrxA9NQv",
-                                                        "__type": "Object",
-                                                        "className": "TransformationModes"
+                                                        "__type": "Pointer",
+                                                        "className": "TransformationModes",
+                                                        "objectId": "jjdrxA9NQv"
                                                     },
                                                     "transformationRate": 100
                                                 },
                                                 {
                                                     "transformationMode": {
-                                                        "name": "Au savon",
-                                                        "transformationType": "WASHING",
-                                                        "createdAt": "2024-04-12T14:25:31.378Z",
-                                                        "updatedAt": "2024-04-12T14:25:31.378Z",
-                                                        "objectId": "bMol23np5I",
-                                                        "__type": "Object",
-                                                        "className": "TransformationModes"
+                                                        "__type": "Pointer",
+                                                        "className": "TransformationModes",
+                                                        "objectId": "bMol23np5I"
                                                     },
                                                     "transformationRate": 100,
                                                     "useInRecipeCount": 1
                                                 },
                                                 {
                                                     "transformationMode": {
-                                                        "name": "Décond machine découpeuse",
-                                                        "transformationType": "UNPACKING",
-                                                        "createdAt": "2022-10-14T14:39:07.289Z",
-                                                        "updatedAt": "2022-10-14T14:39:07.289Z",
-                                                        "objectId": "NQb6Q9KdMJ",
-                                                        "__type": "Object",
-                                                        "className": "TransformationModes"
+                                                        "__type": "Pointer",
+                                                        "className": "TransformationModes",
+                                                        "objectId": "NQb6Q9KdMJ"
                                                     },
                                                     "transformationRate": 10,
                                                     "useInRecipeCount": 2,
@@ -5664,14 +4790,9 @@ export const recipe = {
                                             }
                                         },
                                         "transformationMode": {
-                                            "name": "En cubes",
-                                            "transformationType": "CUTTING",
-                                            "createdAt": "2022-10-21T10:34:53.209Z",
-                                            "updatedAt": "2022-10-21T10:34:53.209Z",
-                                            "useInRecipeCount": 2,
-                                            "objectId": "6ceRxHKgA0",
-                                            "__type": "Object",
-                                            "className": "TransformationModes"
+                                            "__type": "Pointer",
+                                            "className": "TransformationModes",
+                                            "objectId": "6ceRxHKgA0"
                                         },
                                         "transformRate": 60,
                                         "netWeight": 0.1,
@@ -5827,248 +4948,9 @@ export const recipe = {
                                                             }
                                                         ],
                                                         "supplier": {
-                                                            "informations": {
-                                                                "corporateName": "FR",
-                                                                "countryCode": "FR",
-                                                                "continentCode": "EU",
-                                                                "sanitaryApprovalNumber": "213",
-                                                                "siret": 123,
-                                                                "intraTVA": 321,
-                                                                "referenceStartDate": 1669248000000,
-                                                                "referenceEndDate": 1669680000000,
-                                                                "defaultDeliverySite": {
-                                                                    "createdAt": "2021-10-22T09:26:37.327Z",
-                                                                    "updatedAt": "2023-08-17T14:55:28.628Z",
-                                                                    "kitchenAreas": [
-                                                                        {
-                                                                            "kitchenArea": {
-                                                                                "name": "Légumerie",
-                                                                                "createdAt": "2022-10-03T13:28:13.048Z",
-                                                                                "updatedAt": "2022-10-06T13:56:49.815Z",
-                                                                                "objectId": "muRmEs79Dk",
-                                                                                "__type": "Object",
-                                                                                "className": "KitchenArea"
-                                                                            },
-                                                                            "order": 1,
-                                                                            "machinesCount": 3
-                                                                        },
-                                                                        {
-                                                                            "kitchenArea": {
-                                                                                "name": "Déconditionnement",
-                                                                                "createdAt": "2023-02-21T14:47:27.491Z",
-                                                                                "updatedAt": "2023-02-21T14:47:27.491Z",
-                                                                                "objectId": "48AIvqmOq4",
-                                                                                "__type": "Object",
-                                                                                "className": "KitchenArea"
-                                                                            },
-                                                                            "order": 2
-                                                                        },
-                                                                        {
-                                                                            "kitchenArea": {
-                                                                                "name": "Découpe viande",
-                                                                                "createdAt": "2023-08-17T14:53:52.191Z",
-                                                                                "updatedAt": "2023-08-17T14:53:52.191Z",
-                                                                                "objectId": "0zjDqU8S1t",
-                                                                                "__type": "Object",
-                                                                                "className": "KitchenArea"
-                                                                            },
-                                                                            "order": 3
-                                                                        },
-                                                                        {
-                                                                            "kitchenArea": {
-                                                                                "name": "Prépa froide",
-                                                                                "createdAt": "2022-10-03T13:28:13.281Z",
-                                                                                "updatedAt": "2022-11-07T10:29:10.708Z",
-                                                                                "objectId": "ZYbxuJSDYI",
-                                                                                "__type": "Object",
-                                                                                "className": "KitchenArea"
-                                                                            },
-                                                                            "order": 4,
-                                                                            "machinesCount": 2
-                                                                        },
-                                                                        {
-                                                                            "kitchenArea": {
-                                                                                "name": "Prépa chaude",
-                                                                                "createdAt": "2022-10-03T13:28:13.742Z",
-                                                                                "updatedAt": "2022-10-03T13:28:13.742Z",
-                                                                                "objectId": "5TwsE45cjw",
-                                                                                "__type": "Object",
-                                                                                "className": "KitchenArea"
-                                                                            },
-                                                                            "order": 5,
-                                                                            "machinesCount": 0
-                                                                        }
-                                                                    ],
-                                                                    "name": "Sucy",
-                                                                    "deliveryAddress": {
-                                                                        "line1": "Zone Industrielle des Marais, 7 Rue de la Scierie",
-                                                                        "line2": "",
-                                                                        "codeAccess": "",
-                                                                        "zipCode": "94370",
-                                                                        "city": "Sucy-en-Brie",
-                                                                        "country": "France"
-                                                                    },
-                                                                    "invoiceAddress": {
-                                                                        "line1": "110 Avenue de la République",
-                                                                        "line2": "",
-                                                                        "codeAccess": "",
-                                                                        "zipCode": "75011",
-                                                                        "city": "Paris",
-                                                                        "country": "France"
-                                                                    },
-                                                                    "stockZones": [
-                                                                        {
-                                                                            "name": "BOF",
-                                                                            "spot": "Chambre froide",
-                                                                            "temperature": "-4",
-                                                                            "storeNumber": "1000",
-                                                                            "comments": "-",
-                                                                            "createdAt": "2021-10-22T09:27:11.902Z",
-                                                                            "updatedAt": "2022-07-12T10:08:00.998Z",
-                                                                            "_objCount": 105069,
-                                                                            "id": "PxgIX16Aej",
-                                                                            "objectId": "PxgIX16Aej",
-                                                                            "__type": "Object",
-                                                                            "className": "StockZone"
-                                                                        },
-                                                                        {
-                                                                            "name": "Économat",
-                                                                            "spot": "Hohoho",
-                                                                            "temperature": "1000",
-                                                                            "storeNumber": "10000",
-                                                                            "comments": "-",
-                                                                            "createdAt": "2021-10-22T09:30:03.563Z",
-                                                                            "updatedAt": "2022-02-22T10:22:11.434Z",
-                                                                            "objectId": "oWe5OPUjt7",
-                                                                            "__type": "Object",
-                                                                            "className": "StockZone"
-                                                                        },
-                                                                        {
-                                                                            "name": "Palette Épicerie",
-                                                                            "spot": "Sucy 3",
-                                                                            "temperature": "0",
-                                                                            "storeNumber": "1",
-                                                                            "comments": "-",
-                                                                            "createdAt": "2021-10-22T09:31:03.563Z",
-                                                                            "updatedAt": "2022-02-22T10:22:28.738Z",
-                                                                            "objectId": "ewmEK71A7N",
-                                                                            "__type": "Object",
-                                                                            "className": "StockZone"
-                                                                        },
-                                                                        {
-                                                                            "name": "Stockage packaging",
-                                                                            "spot": "fjeaiofew",
-                                                                            "temperature": "12",
-                                                                            "storeNumber": "9213",
-                                                                            "comments": "-",
-                                                                            "createdAt": "2022-07-13T09:25:10.974Z",
-                                                                            "updatedAt": "2022-07-13T09:25:10.974Z",
-                                                                            "objectId": "7AllHgWVJm",
-                                                                            "__type": "Object",
-                                                                            "className": "StockZone"
-                                                                        },
-                                                                        {
-                                                                            "name": "CF Fruits et Légumes",
-                                                                            "spot": "Sucy 5",
-                                                                            "temperature": "213211",
-                                                                            "storeNumber": "32132",
-                                                                            "comments": "-",
-                                                                            "createdAt": "2023-02-21T14:47:40.906Z",
-                                                                            "updatedAt": "2023-02-21T14:47:40.906Z",
-                                                                            "objectId": "X29XFI2GUx",
-                                                                            "__type": "Object",
-                                                                            "className": "StockZone"
-                                                                        }
-                                                                    ],
-                                                                    "type": "",
-                                                                    "image": null,
-                                                                    "news": "Hello Sucy",
-                                                                    "packagingLines": [
-                                                                        {
-                                                                            "name": "Ligne barquettage operculé",
-                                                                            "createdAt": "2024-03-08T16:23:01.535Z",
-                                                                            "updatedAt": "2024-03-08T16:23:01.535Z",
-                                                                            "objectId": "a04ToQQOcY",
-                                                                            "__type": "Object",
-                                                                            "className": "PackagingLine"
-                                                                        },
-                                                                        {
-                                                                            "name": "Ligne de barquettage 02",
-                                                                            "createdAt": "2024-03-08T09:20:31.361Z",
-                                                                            "updatedAt": "2024-03-08T09:20:31.361Z",
-                                                                            "objectId": "gaDWW6yIqg",
-                                                                            "__type": "Object",
-                                                                            "className": "PackagingLine"
-                                                                        },
-                                                                        {
-                                                                            "name": "Packaging line 01",
-                                                                            "createdAt": "2024-03-08T09:20:11.147Z",
-                                                                            "updatedAt": "2024-03-08T09:20:11.147Z",
-                                                                            "objectId": "k3IA0GrGYV",
-                                                                            "__type": "Object",
-                                                                            "className": "PackagingLine"
-                                                                        }
-                                                                    ],
-                                                                    "objectId": "UPK3lbT78C",
-                                                                    "__type": "Object",
-                                                                    "className": "Site"
-                                                                },
-                                                                "clientReference": "FoodChéri"
-                                                            },
-                                                            "name": "TEST BENOIT TEST",
-                                                            "createdAt": "2022-01-10T11:43:36.954Z",
-                                                            "updatedAt": "2023-10-26T12:52:44.454Z",
-                                                            "contact": {
-                                                                "emails": {
-                                                                    "commercialEmails": [
-                                                                        "benoit.durand@foodcheri.com",
-                                                                        "walid.aredjal.ext@foodcheri.com"
-                                                                    ],
-                                                                    "orderEmails": [
-                                                                        "benoit.durand@foodcheri.com",
-                                                                        "walid.aredjal.ext@foodcheri.com"
-                                                                    ]
-                                                                },
-                                                                "country": "France",
-                                                                "city": "Paris",
-                                                                "zipCode": "75011",
-                                                                "address": "Test",
-                                                                "phone": "0600000000",
-                                                                "fax": "0600000000",
-                                                                "contactName": "Benoit"
-                                                            },
-                                                            "order": {
-                                                                "minimumCommand": 100,
-                                                                "minimumCommandUnit": "€",
-                                                                "sendOrderMode": {
-                                                                    "manually": false,
-                                                                    "email": false,
-                                                                    "fax": false
-                                                                },
-                                                                "openDays": "OPEN_DAYS",
-                                                                "deliveryDays": [
-                                                                    1,
-                                                                    2,
-                                                                    3,
-                                                                    6,
-                                                                    7
-                                                                ],
-                                                                "orderPrecision": "Précisions",
-                                                                "forbidMinimumCommand": true,
-                                                                "showLinkInEmail": false,
-                                                                "shippingFees": 40,
-                                                                "allowShippingFeesCancel": true,
-                                                                "allowEarlyDelivery": false,
-                                                                "deliveryLeadTime": 5,
-                                                                "orderHourLimit": "12:00"
-                                                            },
-                                                            "canExportEtiquettable": false,
-                                                            "isActive": true,
-                                                            "_objCount": 37199,
-                                                            "id": "EGELqqv19B",
-                                                            "objectId": "EGELqqv19B",
-                                                            "__type": "Object",
-                                                            "className": "Suppliers"
+                                                            "__type": "Pointer",
+                                                            "className": "Suppliers",
+                                                            "objectId": "EGELqqv19B"
                                                         },
                                                         "name": "X-Carottes",
                                                         "type": "RAW_MATERIAL",
@@ -6112,222 +4994,30 @@ export const recipe = {
                                                         },
                                                         "pricePerKg": 5,
                                                         "site": {
-                                                            "createdAt": "2021-10-22T09:26:37.327Z",
-                                                            "updatedAt": "2023-08-17T14:55:28.628Z",
-                                                            "kitchenAreas": [
-                                                                {
-                                                                    "kitchenArea": {
-                                                                        "name": "Légumerie",
-                                                                        "createdAt": "2022-10-03T13:28:13.048Z",
-                                                                        "updatedAt": "2022-10-06T13:56:49.815Z",
-                                                                        "objectId": "muRmEs79Dk",
-                                                                        "__type": "Object",
-                                                                        "className": "KitchenArea"
-                                                                    },
-                                                                    "order": 1,
-                                                                    "machinesCount": 3
-                                                                },
-                                                                {
-                                                                    "kitchenArea": {
-                                                                        "name": "Déconditionnement",
-                                                                        "createdAt": "2023-02-21T14:47:27.491Z",
-                                                                        "updatedAt": "2023-02-21T14:47:27.491Z",
-                                                                        "objectId": "48AIvqmOq4",
-                                                                        "__type": "Object",
-                                                                        "className": "KitchenArea"
-                                                                    },
-                                                                    "order": 2
-                                                                },
-                                                                {
-                                                                    "kitchenArea": {
-                                                                        "name": "Découpe viande",
-                                                                        "createdAt": "2023-08-17T14:53:52.191Z",
-                                                                        "updatedAt": "2023-08-17T14:53:52.191Z",
-                                                                        "objectId": "0zjDqU8S1t",
-                                                                        "__type": "Object",
-                                                                        "className": "KitchenArea"
-                                                                    },
-                                                                    "order": 3
-                                                                },
-                                                                {
-                                                                    "kitchenArea": {
-                                                                        "name": "Prépa froide",
-                                                                        "createdAt": "2022-10-03T13:28:13.281Z",
-                                                                        "updatedAt": "2022-11-07T10:29:10.708Z",
-                                                                        "objectId": "ZYbxuJSDYI",
-                                                                        "__type": "Object",
-                                                                        "className": "KitchenArea"
-                                                                    },
-                                                                    "order": 4,
-                                                                    "machinesCount": 2
-                                                                },
-                                                                {
-                                                                    "kitchenArea": {
-                                                                        "name": "Prépa chaude",
-                                                                        "createdAt": "2022-10-03T13:28:13.742Z",
-                                                                        "updatedAt": "2022-10-03T13:28:13.742Z",
-                                                                        "objectId": "5TwsE45cjw",
-                                                                        "__type": "Object",
-                                                                        "className": "KitchenArea"
-                                                                    },
-                                                                    "order": 5,
-                                                                    "machinesCount": 0
-                                                                }
-                                                            ],
-                                                            "name": "Sucy",
-                                                            "deliveryAddress": {
-                                                                "line1": "Zone Industrielle des Marais, 7 Rue de la Scierie",
-                                                                "line2": "",
-                                                                "codeAccess": "",
-                                                                "zipCode": "94370",
-                                                                "city": "Sucy-en-Brie",
-                                                                "country": "France"
-                                                            },
-                                                            "invoiceAddress": {
-                                                                "line1": "110 Avenue de la République",
-                                                                "line2": "",
-                                                                "codeAccess": "",
-                                                                "zipCode": "75011",
-                                                                "city": "Paris",
-                                                                "country": "France"
-                                                            },
-                                                            "stockZones": [
-                                                                {
-                                                                    "name": "BOF",
-                                                                    "spot": "Chambre froide",
-                                                                    "temperature": "-4",
-                                                                    "storeNumber": "1000",
-                                                                    "comments": "-",
-                                                                    "createdAt": "2021-10-22T09:27:11.902Z",
-                                                                    "updatedAt": "2022-07-12T10:08:00.998Z",
-                                                                    "_objCount": 105069,
-                                                                    "id": "PxgIX16Aej",
-                                                                    "objectId": "PxgIX16Aej",
-                                                                    "__type": "Object",
-                                                                    "className": "StockZone"
-                                                                },
-                                                                {
-                                                                    "name": "Économat",
-                                                                    "spot": "Hohoho",
-                                                                    "temperature": "1000",
-                                                                    "storeNumber": "10000",
-                                                                    "comments": "-",
-                                                                    "createdAt": "2021-10-22T09:30:03.563Z",
-                                                                    "updatedAt": "2022-02-22T10:22:11.434Z",
-                                                                    "objectId": "oWe5OPUjt7",
-                                                                    "__type": "Object",
-                                                                    "className": "StockZone"
-                                                                },
-                                                                {
-                                                                    "name": "Palette Épicerie",
-                                                                    "spot": "Sucy 3",
-                                                                    "temperature": "0",
-                                                                    "storeNumber": "1",
-                                                                    "comments": "-",
-                                                                    "createdAt": "2021-10-22T09:31:03.563Z",
-                                                                    "updatedAt": "2022-02-22T10:22:28.738Z",
-                                                                    "objectId": "ewmEK71A7N",
-                                                                    "__type": "Object",
-                                                                    "className": "StockZone"
-                                                                },
-                                                                {
-                                                                    "name": "Stockage packaging",
-                                                                    "spot": "fjeaiofew",
-                                                                    "temperature": "12",
-                                                                    "storeNumber": "9213",
-                                                                    "comments": "-",
-                                                                    "createdAt": "2022-07-13T09:25:10.974Z",
-                                                                    "updatedAt": "2022-07-13T09:25:10.974Z",
-                                                                    "objectId": "7AllHgWVJm",
-                                                                    "__type": "Object",
-                                                                    "className": "StockZone"
-                                                                },
-                                                                {
-                                                                    "name": "CF Fruits et Légumes",
-                                                                    "spot": "Sucy 5",
-                                                                    "temperature": "213211",
-                                                                    "storeNumber": "32132",
-                                                                    "comments": "-",
-                                                                    "createdAt": "2023-02-21T14:47:40.906Z",
-                                                                    "updatedAt": "2023-02-21T14:47:40.906Z",
-                                                                    "objectId": "X29XFI2GUx",
-                                                                    "__type": "Object",
-                                                                    "className": "StockZone"
-                                                                }
-                                                            ],
-                                                            "type": "",
-                                                            "image": null,
-                                                            "news": "Hello Sucy",
-                                                            "packagingLines": [
-                                                                {
-                                                                    "name": "Ligne barquettage operculé",
-                                                                    "createdAt": "2024-03-08T16:23:01.535Z",
-                                                                    "updatedAt": "2024-03-08T16:23:01.535Z",
-                                                                    "objectId": "a04ToQQOcY",
-                                                                    "__type": "Object",
-                                                                    "className": "PackagingLine"
-                                                                },
-                                                                {
-                                                                    "name": "Ligne de barquettage 02",
-                                                                    "createdAt": "2024-03-08T09:20:31.361Z",
-                                                                    "updatedAt": "2024-03-08T09:20:31.361Z",
-                                                                    "objectId": "gaDWW6yIqg",
-                                                                    "__type": "Object",
-                                                                    "className": "PackagingLine"
-                                                                },
-                                                                {
-                                                                    "name": "Packaging line 01",
-                                                                    "createdAt": "2024-03-08T09:20:11.147Z",
-                                                                    "updatedAt": "2024-03-08T09:20:11.147Z",
-                                                                    "objectId": "k3IA0GrGYV",
-                                                                    "__type": "Object",
-                                                                    "className": "PackagingLine"
-                                                                }
-                                                            ],
-                                                            "objectId": "UPK3lbT78C",
-                                                            "__type": "Object",
-                                                            "className": "Site"
+                                                            "__type": "Pointer",
+                                                            "className": "Site",
+                                                            "objectId": "UPK3lbT78C"
                                                         },
                                                         "stockZone": {
-                                                            "name": "CF Fruits et Légumes",
-                                                            "spot": "Sucy 5",
-                                                            "temperature": "213211",
-                                                            "storeNumber": "32132",
-                                                            "comments": "-",
-                                                            "createdAt": "2023-02-21T14:47:40.906Z",
-                                                            "updatedAt": "2023-02-21T14:47:40.906Z",
-                                                            "objectId": "X29XFI2GUx",
-                                                            "__type": "Object",
-                                                            "className": "StockZone"
+                                                            "__type": "Pointer",
+                                                            "className": "StockZone",
+                                                            "objectId": "X29XFI2GUx"
                                                         },
                                                         "commercialName": {
                                                             "name": "carotte bio",
                                                             "createdAt": "2019-01-17T17:18:06.693Z",
-                                                            "updatedAt": "2024-04-18T14:25:05.926Z",
+                                                            "updatedAt": "2025-06-02T15:48:39.135Z",
                                                             "group": {
-                                                                "family": {
-                                                                    "name": "légumes & herbes",
-                                                                    "createdAt": "2019-03-04T13:36:51.372Z",
-                                                                    "updatedAt": "2020-04-14T07:49:00.493Z",
-                                                                    "objectId": "I1sA6aCCKS",
-                                                                    "__type": "Object",
-                                                                    "className": "FamiliesIngredients"
-                                                                },
-                                                                "name": "autres légumes",
-                                                                "createdAt": "2020-04-14T07:52:21.426Z",
-                                                                "updatedAt": "2020-04-17T18:08:29.360Z",
-                                                                "_objCount": 32057,
-                                                                "id": "a8Q2DwtAtk",
-                                                                "objectId": "a8Q2DwtAtk",
-                                                                "__type": "Object",
-                                                                "className": "GroupsIngredients"
+                                                                "__type": "Pointer",
+                                                                "className": "GroupsIngredients",
+                                                                "objectId": "a8Q2DwtAtk"
                                                             },
-                                                            "conservationMode": 1,
+                                                            "conservationMode": 3,
                                                             "firstOrigin": 4,
                                                             "firstOriginAverage": 78,
                                                             "secondOrigin": 5,
                                                             "secondOriginAverage": 22,
-                                                            "label": 1,
+                                                            "label": 17,
                                                             "season": [
                                                                 "1",
                                                                 "2",
@@ -6342,9 +5032,9 @@ export const recipe = {
                                                                 "11",
                                                                 "12"
                                                             ],
-                                                            "recipeQuantity": 647,
+                                                            "recipeQuantity": 720,
                                                             "complexity": 1,
-                                                            "exportEtiquettable": 1713450305898,
+                                                            "exportEtiquettable": 1748879319114,
                                                             "objectId": "FVFUXBg0If",
                                                             "__type": "Object",
                                                             "className": "CommercialName"
@@ -6352,53 +5042,33 @@ export const recipe = {
                                                         "transformationModes": [
                                                             {
                                                                 "transformationMode": {
-                                                                    "name": "En cubes",
-                                                                    "transformationType": "CUTTING",
-                                                                    "createdAt": "2022-10-21T10:34:53.209Z",
-                                                                    "updatedAt": "2022-10-21T10:34:53.209Z",
-                                                                    "useInRecipeCount": 2,
-                                                                    "objectId": "6ceRxHKgA0",
-                                                                    "__type": "Object",
-                                                                    "className": "TransformationModes"
+                                                                    "__type": "Pointer",
+                                                                    "className": "TransformationModes",
+                                                                    "objectId": "6ceRxHKgA0"
                                                                 },
                                                                 "transformationRate": 86
                                                             },
                                                             {
                                                                 "transformationMode": {
-                                                                    "name": "Sauté",
-                                                                    "transformationType": "COOKING",
-                                                                    "createdAt": "2022-10-14T14:42:58.037Z",
-                                                                    "updatedAt": "2022-10-14T14:42:58.037Z",
-                                                                    "useInRecipeCount": 1,
-                                                                    "objectId": "GEzjFqccMt",
-                                                                    "__type": "Object",
-                                                                    "className": "TransformationModes"
+                                                                    "__type": "Pointer",
+                                                                    "className": "TransformationModes",
+                                                                    "objectId": "GEzjFqccMt"
                                                                 },
                                                                 "transformationRate": 60
                                                             },
                                                             {
                                                                 "transformationMode": {
-                                                                    "name": "Vapeur",
-                                                                    "transformationType": "COOKING",
-                                                                    "createdAt": "2022-10-21T10:35:05.216Z",
-                                                                    "updatedAt": "2022-10-21T10:35:05.216Z",
-                                                                    "useInRecipeCount": 7,
-                                                                    "objectId": "8njIFYzOUa",
-                                                                    "__type": "Object",
-                                                                    "className": "TransformationModes"
+                                                                    "__type": "Pointer",
+                                                                    "className": "TransformationModes",
+                                                                    "objectId": "8njIFYzOUa"
                                                                 },
                                                                 "transformationRate": 55
                                                             },
                                                             {
                                                                 "transformationMode": {
-                                                                    "name": "Grattiné",
-                                                                    "transformationType": "COOKING",
-                                                                    "createdAt": "2022-10-21T10:37:41.650Z",
-                                                                    "updatedAt": "2022-10-21T10:37:41.650Z",
-                                                                    "useInRecipeCount": 1,
-                                                                    "objectId": "Z2jQN7f1gj",
-                                                                    "__type": "Object",
-                                                                    "className": "TransformationModes"
+                                                                    "__type": "Pointer",
+                                                                    "className": "TransformationModes",
+                                                                    "objectId": "Z2jQN7f1gj"
                                                                 },
                                                                 "transformationRate": 83
                                                             }
@@ -6408,14 +5078,9 @@ export const recipe = {
                                                     },
                                                     "transformRate": 60,
                                                     "transformationMode": {
-                                                        "name": "Sauté",
-                                                        "transformationType": "COOKING",
-                                                        "createdAt": "2022-10-14T14:42:58.037Z",
-                                                        "updatedAt": "2022-10-14T14:42:58.037Z",
-                                                        "useInRecipeCount": 1,
-                                                        "objectId": "GEzjFqccMt",
-                                                        "__type": "Object",
-                                                        "className": "TransformationModes"
+                                                        "__type": "Pointer",
+                                                        "className": "TransformationModes",
+                                                        "objectId": "GEzjFqccMt"
                                                     },
                                                     "emptyComponent": true,
                                                     "priorSteps": null
