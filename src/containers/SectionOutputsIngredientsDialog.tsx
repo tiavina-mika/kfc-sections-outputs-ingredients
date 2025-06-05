@@ -5,10 +5,10 @@ import {
   DialogActions,
   Button,
 } from "@mui/material";
-import SectionOutputsIngredientsForm from "./SectionOutputsIngredientsForm";
 import type { FormikProps } from "formik";
 import { useRef } from "react";
 import type { SectionOutputsIngredientsFormValues } from "../types/section.type";
+import SectionOutputsIngredientsForm from "./SectionOutputsIngredientsForm";
 
 const sx = {
   dialog: {
