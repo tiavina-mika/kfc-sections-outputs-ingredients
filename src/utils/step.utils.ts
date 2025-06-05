@@ -76,10 +76,15 @@ export const getSectionOutputsIngredientsFormInitialValues = (section: Record<st
     const supplierItems = section ? getAllIngredientsFromSection(section) : [];
 
     return {
+      // always 2 outputs by default, one for ingredients and one for empty output
       sectionOutputs: [
         {
           name: "",
           ingredients: supplierItems
+        },
+        {
+          name: "",
+          ingredients: []
         }
       ]
     };
