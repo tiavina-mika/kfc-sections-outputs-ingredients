@@ -84,7 +84,10 @@ const StyledNoIngredients = styled(Grid)({
   gap: 8,
   borderRadius: 8,
   height: 40,
-  border: "2px dashed #fff"
+  border: "2px dashed #fff",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
 });
 
 const getError = (errors: Record<string, any>, index: number, fieldName: string) => {
@@ -201,7 +204,13 @@ const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngre
                                 }}
                               >
                                 {sectionOutput.ingredients.length === 0 ? (
-                                  <StyledNoIngredients size={6} />
+                                  <StyledNoIngredients size={6}>
+                                    {typeof getError(errors, index, 'ingredients') === 'string' && (
+                                      <Typography variant="caption" color="error">
+                                        {getError(errors, index, 'ingredients')}
+                                      </Typography>
+                                    )}
+                                  </StyledNoIngredients>
                                 ) : (
                                   sectionOutput.ingredients.map((ingredient: Record<string, any>, ingredientIndex: number) => (
                                     <Draggable
