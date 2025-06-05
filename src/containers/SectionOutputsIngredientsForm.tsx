@@ -17,7 +17,25 @@ import { forwardRef } from "react";
 import DragIndicatorIcon from '@mui/icons-material/DragIndicator';
 import { getSectionOutputsIngredientsFormInitialValues } from "../utils/step.utils";
 import StrictModeDroppable from "./StrictModeDroppable";
+import * as Yup from "yup";
 
+
+const sectionOutputsIngredientsValidationSchema = Yup.object().shape({
+  sectionOutputs: Yup.array().of(
+    Yup.object().shape({
+      name: Yup.string().required("Le nom de la partie est requis"),
+      ingredients: Yup.array().of(
+        Yup.object().shape({
+          supplierItem: Yup.object().shape({
+            objectId: Yup.string().required("L'ID du fournisseur est requis"),
+            name: Yup.string().required("Le nom de l'ingrédient est requis"),
+          }),
+          netWeight: Yup.number().required("Le poids net est requis").min(0, "Le poids net doit être positif"),
+        })
+      ).min(1, "Au moins un ingrédient est requis")
+    })
+  )
+});
 
 type Ingredient = {
   supplierItem: {
@@ -69,6 +87,14 @@ const StyledNoIngredients = styled(Grid)({
   border: "2px dashed #fff"
 });
 
+const getError = (errors: Record<string, any>, index: number, fieldName: string) => {
+  if (!Array.isArray(errors.sectionOutputs) || typeof errors.sectionOutputs[index] !== "object" || errors.sectionOutputs[index] === null) {
+    return undefined;
+  }
+
+  return errors.sectionOutputs[index][fieldName] as string | undefined;
+}
+
 export type SectionOutputsIngredientsFormValues = {
   sectionOutputs: {
     name: string;
@@ -84,7 +110,6 @@ type Props = {
 const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngredientsFormValues>, Props>(
   ({ onSubmit, section }, ref) => {
 
-    // Helper to reorder/move ingredients
     const onDragEnd = (
       result: DropResult,
       values: SectionOutputsIngredientsFormValues,
@@ -123,8 +148,10 @@ const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngre
         onSubmit={onSubmit}
         enableReinitialize
         innerRef={ref}
+        validationSchema={sectionOutputsIngredientsValidationSchema}
+        validateOnChange={false}
       >
-        {({ values, setFieldValue }) => (
+        {({ values, setFieldValue, errors }) => (
           <Form>
             <FieldArray name="sectionOutputs">
               {({ push, remove }) => (
@@ -157,6 +184,8 @@ const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngre
                             fullWidth
                             variant="standard"
                             size="small"
+                            error={!!getError(errors, index, 'name')}
+                            helperText={getError(errors, index, 'name')}
                           />
                           <StrictModeDroppable droppableId={`ingredients-${index}`} direction="vertical">
                             {(provided, snapshot) => (
