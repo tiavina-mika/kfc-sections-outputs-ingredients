@@ -10,13 +10,21 @@ export const getAllSupplierItemsFromStepComponents = (
 ): Record<string, any>[] => {
   const supplierItems: Record<string, any>[] = [];
 
-  const traverse = (components: Record<string, any>[]) => {
+  const traverse = (components: Record<string, any>[], priorStepsIndex?: string) => {
     for (const component of components) {
       if (component.supplierItem) {
-        supplierItems.push(component);
+        const values: Record<string, any> = {
+          netWeight: component.netWeight,
+          supplierItem: { name: component.supplierItem.name },
+          stepComponentIndex: component.index,
+        };
+        if (priorStepsIndex) {
+          values.priorStepsIndex = priorStepsIndex;
+        }
+        supplierItems.push(values);
       }
       if (component.priorSteps && component.priorSteps.stepComponents) {
-        traverse(component.priorSteps.stepComponents);
+        traverse(component.priorSteps.stepComponents, component.priorSteps.index);
       }
     }
   };
@@ -47,6 +55,14 @@ export const getAllIngredientsFromSection = (section: Record<string, any>) => {
   return collectedIngredients
 }
 
+/**
+ * Generates the initial form values for section outputs and their ingredients.
+ *
+ * it initializes the form with a single output containing all ingredients from the section (if available).
+ * Otherwise, it returns the existing `sectionOutputs` from the section.
+ *
+ * @param section - The section object containing outputs and ingredients, or null.
+ */
 export const getSectionOutputsIngredientsFormInitialValues = (section: Record<string, any> | null) => {
   if (!section || !section.sectionOutputs || section.sectionOutputs.length === 0) {
     const supplierItems = section ? getAllIngredientsFromSection(section) : [];
