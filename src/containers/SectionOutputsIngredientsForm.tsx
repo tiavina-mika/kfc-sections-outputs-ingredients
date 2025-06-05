@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+import { DragDropContext, Draggable, type DropResult } from "react-beautiful-dnd";
 import DeleteIcon from "@mui/icons-material/Delete";
 import AddIcon from "@mui/icons-material/Add";
 import { Formik, FieldArray, Form, Field, type FormikProps } from "formik";
@@ -15,6 +15,8 @@ import {
 import { forwardRef } from "react";
 import DragIndicatorIcon from '@mui/icons-material/DragIndicator';
 import { getSectionOutputsIngredientsFormInitialValues } from "../utils/step.utils";
+import StrictModeDroppable from "./StrictModeDroppable";
+
 
 type Ingredient = {
   supplierItem: {
@@ -23,62 +25,6 @@ type Ingredient = {
   };
   netWeight: number;
 };
-
-type SectionOutput = {
-  objectId: string;
-  index: string;
-  name: string;
-  netWeight: number;
-  type: string;
-  ingredients: Ingredient[];
-};
-
-type StepComponent = {
-  index: string;
-  type: string;
-  sectionOutputs: SectionOutput[];
-};
-
-const stepComponents: StepComponent[] = [
-  {
-    index: "1adb075d-84b0-443a-be90-83559b253e42",
-    type: "ingredient",
-    sectionOutputs: [
-      {
-        objectId: "so1",
-        index: "83559b253e42-1adb075d-84b0-443a-be90",
-        name: "Porc",
-        netWeight: 0.002,
-        type: "ingredient",
-        ingredients: [
-          {
-            supplierItem: {
-              objectId: "tKFVbHYlIP",
-              name: "Paprika fumé",
-            },
-            netWeight: 1,
-          },
-          {
-            supplierItem: {
-              objectId: "tKFVbHYlIP",
-              name: "Cumin moulu",
-            },
-            netWeight: 1,
-          },
-        ],
-      },
-      {
-        objectId: "so2",
-        index: "be9083559b253e42-1adb075d-84b0-443a",
-        name: "",
-        // name: "Sauce lard",
-        netWeight: 0.003,
-        type: "ingredient",
-        ingredients: [],
-      },
-    ],
-  },
-];
 
 const StyledPart = styled(Box)({
   padding: "16px 12px 8px 12px",
@@ -112,15 +58,6 @@ export type SectionOutputsIngredientsFormValues = {
   }[];
 };
 
-// const initialValues: SectionOutputsIngredientsFormValues = {
-//   sectionOutputs:
-//     stepComponents[0]?.sectionOutputs.map((so) => ({
-//       name: so.name,
-//       type: so.type,
-//       ingredients: so.ingredients,
-//     })) || [],
-// };
-
 type Props = {
   onSubmit: (values: SectionOutputsIngredientsFormValues) => void;
   section: Record<string, any> | null;
@@ -129,20 +66,53 @@ type Props = {
 const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngredientsFormValues>, Props>(
   ({ onSubmit, section }, ref) => {
 
-  return (
-    <Formik
-      // initialValues={initialValues}
-      initialValues={getSectionOutputsIngredientsFormInitialValues(section)}
-      validateOnBlur={false}
-      onSubmit={onSubmit}
-      enableReinitialize
-      innerRef={ref}
-    >
-      {({ values }) => (
-        <Form>
+    // Helper to reorder/move ingredients
+    const onDragEnd = (
+      result: DropResult,
+      values: SectionOutputsIngredientsFormValues,
+      setFieldValue: (field: string, value: any) => void
+    ) => {
+      const { source, destination } = result;
+      if (!destination) return;
+      if (
+        source.droppableId === destination.droppableId &&
+        source.index === destination.index
+      ) {
+        return;
+      }
+
+      const sourcePartIdx = parseInt(source.droppableId.replace("ingredients-", ""));
+      const destPartIdx = parseInt(destination.droppableId.replace("ingredients-", ""));
+
+      const sourceIngredients = Array.from(values.sectionOutputs[sourcePartIdx].ingredients);
+      const [moved] = sourceIngredients.splice(source.index, 1);
+
+      if (sourcePartIdx === destPartIdx) {
+        sourceIngredients.splice(destination.index, 0, moved);
+        setFieldValue(`sectionOutputs.${sourcePartIdx}.ingredients`, sourceIngredients);
+      } else {
+        const destIngredients = Array.from(values.sectionOutputs[destPartIdx].ingredients);
+        destIngredients.splice(destination.index, 0, moved);
+        setFieldValue(`sectionOutputs.${sourcePartIdx}.ingredients`, sourceIngredients);
+        setFieldValue(`sectionOutputs.${destPartIdx}.ingredients`, destIngredients);
+      }
+    };
+
+    return (
+      <Formik
+        initialValues={getSectionOutputsIngredientsFormInitialValues(section)}
+        validateOnBlur={false}
+        onSubmit={onSubmit}
+        enableReinitialize
+        innerRef={ref}
+      >
+        {({ values, setFieldValue }) => (
+          <Form>
             <FieldArray name="sectionOutputs">
               {({ push, remove }) => (
-                <>
+                <DragDropContext
+                  onDragEnd={result => onDragEnd(result, values, setFieldValue)}
+                >
                   <Box sx={{ display: "flex", justifyContent: "flex-end", alignItems: "center", mb: 1 }}>
                     <Button
                       variant="text"
@@ -157,11 +127,11 @@ const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngre
                   <Stack spacing={2}>
                     {values.sectionOutputs.map((sectionOutput: Record<string, any>, index: number) => (
                       <StyledPart
+                        key={index}
                         display="flex"
                         alignItems="flex-start"
                       >
                         <Stack flex={1} spacing={2}>
-                          {/* name field */}
                           <Field
                             as={TextField}
                             name={`sectionOutputs.${index}.name`}
@@ -170,27 +140,48 @@ const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngre
                             variant="standard"
                             size="small"
                           />
-                          {/* ingredients field */}
-                          <Grid container spacing={1} sx={{ flex: 1 }}>
-                            {/* no ingredient */}
-                            {sectionOutput.ingredients.length === 0 ? (
-                              <StyledNoIngredients size={6} />
-                            ) : (
-                              // with ingredients
-                              sectionOutput.ingredients.map((ingredient: Record<string, any>, ingredientIndex: number) => (
-                                <Grid size={6} key={ingredientIndex}>
-                                  <StyledIngredient>
-                                    <DragIndicatorIcon />
-                                    <Typography variant="body2" sx={{ fontSize: 16, lineHeight: 1.5, fontWeight: 400 }}>
-                                      {ingredient.supplierItem.name}
-                                    </Typography>
-                                  </StyledIngredient>
-                                </Grid>
-                              ))
+                          <StrictModeDroppable droppableId={`ingredients-${index}`} direction="vertical">
+                            {(provided) => (
+                              <Grid
+                                container
+                                spacing={1}
+                                sx={{ flex: 1 }}
+                                ref={provided.innerRef}
+                                {...provided.droppableProps}
+                              >
+                                {sectionOutput.ingredients.length === 0 ? (
+                                  <StyledNoIngredients size={6} />
+                                ) : (
+                                  sectionOutput.ingredients.map((ingredient: Record<string, any>, ingredientIndex: number) => (
+                                    <Draggable
+                                      key={ingredientIndex}
+                                      draggableId={`ingredient-${index}-${ingredientIndex}`}
+                                      index={ingredientIndex}
+                                    >
+                                      {(provided) => (
+                                        <Grid
+                                          size={6}
+                                          ref={provided.innerRef}
+                                          {...provided.draggableProps}
+                                          {...provided.dragHandleProps}
+                                        >
+                                          <StyledIngredient style={{ ...provided.draggableProps.style }}
+>
+                                            <DragIndicatorIcon />
+                                            <Typography variant="body2" sx={{ fontSize: 16, lineHeight: 1.5, fontWeight: 400 }}>
+                                              {ingredient.supplierItem.name}
+                                            </Typography>
+                                          </StyledIngredient>
+                                        </Grid>
+                                      )}
+                                    </Draggable>
+                                  ))
+                                )}
+                                {provided.placeholder}
+                              </Grid>
                             )}
-                          </Grid>
+                          </StrictModeDroppable>
                         </Stack>
-                        {/* delete a part */}
                         {index > 1 && (
                           <IconButton
                             aria-label="Supprimer la partie"
@@ -202,13 +193,14 @@ const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngre
                       </StyledPart>
                     ))}
                   </Stack>
-                </>
+                </DragDropContext>
               )}
             </FieldArray>
-        </Form>
-      )}
-    </Formik>
-  );
-});
+          </Form>
+        )}
+      </Formik>
+    );
+  }
+);
 
 export default SectionOutputsIngredientsForm;
