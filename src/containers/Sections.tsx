@@ -1,5 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -10,23 +9,41 @@ import Paper from '@mui/material/Paper';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import EditIcon from '@mui/icons-material/Edit';
-import SectionOutputsIngredientsDialogForm from './SectionOutputsIngredientsDialog';
 import { Box, Typography } from '@mui/material';
-import { recipe } from '../utils/data';
-import type { SectionOutputsIngredientsFormValues } from './SectionOutputsIngredientsForm';
+import SectionOutputsIngredientsDialogForm from './SectionOutputsIngredientsDialog';
+import type { SectionOutputsIngredientsFormValues } from '../types/section.type';
+// import { recipe } from '../utils/data';
 
 type Props = {
   sections: Record<string, any>[];
 }
 const Sections = ({ sections = [] }: Props) => {
+  const [sectionsList, setSectionsList] = useState<Record<string, any>[]>([]);
   const [selectedSection, setSelectedSection] = useState<Record<string, any> | null>(null);
+  console.log('selectedSection: ', selectedSection);
+
+  useEffect(() => {
+    setSectionsList(sections);
+  }, [sections]);
 
   const handleClearSelectedSection = () => {
     setSelectedSection(null);
   }
 
   const handleConfirmSectionOutputs = (values: SectionOutputsIngredientsFormValues) => {
-    console.log("values", values);
+    setSectionsList((prevSections) => {
+      return prevSections.map((section) => {
+        if (section.id === selectedSection?.id) {
+          return {
+            ...section,
+            sectionOutputs: values.sectionOutputs,
+          };
+        }
+        return section;
+      });
+    });
+
+    handleClearSelectedSection();
   };
 
   return (
@@ -39,21 +56,36 @@ const Sections = ({ sections = [] }: Props) => {
               <TableCell>ID</TableCell>
               <TableCell>Name</TableCell>
               <TableCell>Steps Count</TableCell>
+              <TableCell>Output</TableCell>
               <TableCell>Action</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
-            {sections.map((section) => (
+            {sectionsList.map((section) => (
               <TableRow key={section.id}>
                 <TableCell>{section.id}</TableCell>
                 <TableCell>{section.name}</TableCell>
                 <TableCell>{section.productionSteps?.length || 0}</TableCell>
                 <TableCell>
+                  {section.sectionOutputs?.length ? (
+                    section.sectionOutputs.map((output: any, index: number) => (
+                      <Box key={index} sx={{ mb: 1 }}>
+                        <Typography variant="body2">{output.name}</Typography>
+                        <Typography variant="caption" color="textSecondary">
+                          {output.ingredients.map((ingredient: any) => ingredient.supplierItem.name).join(', ')}
+                        </Typography>
+                      </Box>
+                    ))
+                  ) : (
+                    <Typography variant="body2" color="textSecondary">No outputs</Typography>
+                  )}
+                </TableCell>
+                <TableCell>
                   {/* icon button with tooltip and edit icon */}
                   <Tooltip title="Edit Section">
                     <IconButton
                       aria-label="edit"
-                      onClick={() => setSelectedSection([section])}
+                      onClick={() => setSelectedSection(section)}
                       size="small"
                     >
                       <EditIcon />
@@ -69,10 +101,9 @@ const Sections = ({ sections = [] }: Props) => {
       {/* -------- Dialog --------- */}
       <SectionOutputsIngredientsDialogForm
         onClose={handleClearSelectedSection}
-        // open={!!selectedSection}
-        // section={selectedSection}
-        open
-        section={recipe.sections[0]} // For demo purposes, using the first section
+        open={!!selectedSection}
+        section={selectedSection}
+        // section={recipe.sections[0]} // For demo purposes, using the first section
         onSubmit={handleConfirmSectionOutputs}
       />
 
