@@ -14,6 +14,7 @@ import {
 } from "@mui/material";
 import { forwardRef } from "react";
 import DragIndicatorIcon from '@mui/icons-material/DragIndicator';
+import { getSectionOutputsIngredientsFormInitialValues } from "../utils/step.utils";
 
 type Ingredient = {
   supplierItem: {
@@ -131,7 +132,8 @@ const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngre
   return (
     <Formik
       // initialValues={initialValues}
-      initialValues={{ sectionOutputs: section?.sectionOutputs || []}}
+      initialValues={getSectionOutputsIngredientsFormInitialValues(section)}
+      validateOnBlur={false}
       onSubmit={onSubmit}
       enableReinitialize
       innerRef={ref}
