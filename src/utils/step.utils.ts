@@ -45,7 +45,7 @@ export const getAllSupplierItemsFromStepComponentsForSectionOutput = (
  * @param section - An object representing a section, expected to contain a `productionSteps` array.
  * @returns An array of ingredient objects collected from the last production step's components.
  */
-export const getAllIngredientsFromSection = (section: Record<string, any>) => {
+export const getAllIngredientsFromSection = (section: Record<string, any>): Record<string, any>[] => {
   const productionSteps = section.productionSteps;
   if (!Array.isArray(productionSteps) || productionSteps.length === 0) return [];
 
