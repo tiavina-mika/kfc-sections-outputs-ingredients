@@ -27,10 +27,10 @@ const sectionOutputsIngredientsValidationSchema = Yup.object().shape({
       ingredients: Yup.array().of(
         Yup.object().shape({
           supplierItem: Yup.object().shape({
-            objectId: Yup.string().required("L'ID du fournisseur est requis"),
-            name: Yup.string().required("Le nom de l'ingrédient est requis"),
+            objectId: Yup.string(),
+            name: Yup.string(),
           }),
-          netWeight: Yup.number().required("Le poids net est requis").min(0, "Le poids net doit être positif"),
+          // netWeight: Yup.number().min(0, "Le poids net doit être positif"),
         })
       ).min(1, "Au moins un ingrédient est requis")
     })
