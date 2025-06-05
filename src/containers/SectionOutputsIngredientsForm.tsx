@@ -11,6 +11,7 @@ import {
   Stack,
   styled,
   Grid,
+  type Theme,
 } from "@mui/material";
 import { forwardRef } from "react";
 import DragIndicatorIcon from '@mui/icons-material/DragIndicator';
@@ -26,6 +27,11 @@ type Ingredient = {
   netWeight: number;
 };
 
+type StyledDraggableCardProps = {
+  isDragging: boolean;
+  theme?: Theme; // Required for styled(Card)<Props> to correctly infer theme type
+};
+
 const StyledPart = styled(Box)({
   padding: "16px 12px 8px 12px",
   gap: "16px",
@@ -33,14 +39,27 @@ const StyledPart = styled(Box)({
   background: "#E3F2FD",
 });
 
-const StyledIngredient = styled(Box)({
+const StyledDraggableCard = styled(Box)<StyledDraggableCardProps>(({ theme, isDragging }) => ({
+  userSelect: 'none',
   padding: "8px",
   display: "flex",
   alignItems: "center",
   gap: 8,
   borderRadius: 8,
-  backgroundColor: "#fff"
-});
+  backgroundColor: theme.palette.background.paper,
+  transition: 'background-color 0.2s ease, box-shadow 0.2s ease', // Smooth transitions
+  cursor: 'grab',
+
+  ...(isDragging && {
+    cursor: 'grabbing !important',
+    boxShadow: theme.shadows[6], // Higher elevation when dragging
+    transform: 'rotate(2deg)', // A subtle visual effect when dragging
+  }),
+
+  '&:active': {
+    cursor: 'grabbing',
+  },
+}));
 
 const StyledNoIngredients = styled(Grid)({
   padding: "8px",
@@ -48,7 +67,6 @@ const StyledNoIngredients = styled(Grid)({
   borderRadius: 8,
   height: 40,
   border: "2px dashed #fff"
-
 });
 
 export type SectionOutputsIngredientsFormValues = {
@@ -141,37 +159,40 @@ const SectionOutputsIngredientsForm = forwardRef<FormikProps<SectionOutputsIngre
                             size="small"
                           />
                           <StrictModeDroppable droppableId={`ingredients-${index}`} direction="vertical">
-                            {(provided) => (
+                            {(provided, snapshot) => (
                               <Grid
                                 container
                                 spacing={1}
-                                sx={{ flex: 1 }}
                                 ref={provided.innerRef}
                                 {...provided.droppableProps}
+                                sx={{
+                                  backgroundColor: snapshot.isDraggingOver ? '#d0e3f7' : undefined,
+                                  transition: 'background-color 0.2s ease',
+                                  flex: 1
+                                }}
                               >
                                 {sectionOutput.ingredients.length === 0 ? (
                                   <StyledNoIngredients size={6} />
                                 ) : (
                                   sectionOutput.ingredients.map((ingredient: Record<string, any>, ingredientIndex: number) => (
                                     <Draggable
-                                      key={ingredientIndex}
+                                      key={`ingredient-${index}-${ingredientIndex}`}
                                       draggableId={`ingredient-${index}-${ingredientIndex}`}
                                       index={ingredientIndex}
                                     >
-                                      {(provided) => (
-                                        <Grid
-                                          size={6}
-                                          ref={provided.innerRef}
-                                          {...provided.draggableProps}
-                                          {...provided.dragHandleProps}
-                                        >
-                                          <StyledIngredient style={{ ...provided.draggableProps.style }}
->
-                                            <DragIndicatorIcon />
+                                      {(provided, snapshot) => (
+                                        <Grid size={6}>
+                                          <StyledDraggableCard
+                                            ref={provided.innerRef}
+                                            {...provided.draggableProps}
+                                            {...provided.dragHandleProps}
+                                            isDragging={snapshot.isDragging}
+                                          >
+                                            <DragIndicatorIcon aria-label="drag handle" />
                                             <Typography variant="body2" sx={{ fontSize: 16, lineHeight: 1.5, fontWeight: 400 }}>
                                               {ingredient.supplierItem.name}
                                             </Typography>
-                                          </StyledIngredient>
+                                          </StyledDraggableCard>
                                         </Grid>
                                       )}
                                     </Draggable>
