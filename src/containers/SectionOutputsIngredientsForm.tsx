@@ -91,8 +91,6 @@ const getError = (errors: Record<string, any>, index: number, fieldName: string)
   return errors.sectionOutputs[index][fieldName] as string | undefined;
 }
 
-
-
 type Props = {
   onSubmit: (values: SectionOutputsIngredientsFormValues ) => void;
   section: Record<string, any> | null;
