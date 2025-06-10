@@ -28,7 +28,7 @@ type Props = {
   section: Record<string, any> | null;
 };
 
-const SectionOutputsIngredientsDialogForm = ({
+const SectionOutputsIngredientsDialog = ({
   open,
   onClose,
   section,
@@ -62,4 +62,4 @@ return (
 );
 };
 
-export default SectionOutputsIngredientsDialogForm;
+export default SectionOutputsIngredientsDialog;
