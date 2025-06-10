@@ -15,7 +15,7 @@ export const getAllSupplierItemsFromStepComponentsForSectionOutput = (
       if (component.supplierItem) {
         const values: Record<string, any> = {
           netWeight: component.netWeight,
-          supplierItem: { name: component.supplierItem.name },
+          supplierItem: { name: component.supplierItem.name, objectId: component.supplierItem.id },
           stepComponentIndex: component.index,
           section: convertIdToPointer("Section", section.id),
         };
