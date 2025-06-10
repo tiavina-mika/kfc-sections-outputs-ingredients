@@ -10,7 +10,7 @@ import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import EditIcon from '@mui/icons-material/Edit';
 import { Box, Typography } from '@mui/material';
-import SectionOutputsIngredientsDialogForm from './SectionOutputsIngredientsDialog';
+import SectionOutputsIngredientsDialog from './SectionOutputsIngredientsDialog';
 import type { SectionOutputsIngredientsFormValues } from '../types/section.type';
 // import { recipe } from '../utils/data';
 
@@ -98,7 +98,7 @@ const Sections = ({ sections = [] }: Props) => {
       </TableContainer>
 
       {/* -------- Dialog --------- */}
-      <SectionOutputsIngredientsDialogForm
+      <SectionOutputsIngredientsDialog
         onClose={handleClearSelectedSection}
         open={!!selectedSection}
         section={selectedSection}
